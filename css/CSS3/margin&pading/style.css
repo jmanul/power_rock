@@ -1,0 +1,39 @@
+
+.primerDiv {
+     background-color: palevioletred;
+     padding: 32px;
+     margin: 12px;
+}
+
+.segundoDiv {
+     background-color: aquamarine;
+     margin-bottom: 48px;
+    
+}
+
+.tercerDiv {
+     background-color: bisque;
+     position: absolute;
+     margin-right: 12px;
+     padding: 20px;
+     right: 5px;
+    
+}
+
+.tercerDiv > h2 {
+
+     margin-left: 40px;
+     margin-right: 40px;
+}
+
+.primerDiv > h2 {
+
+     text-align: center;
+}
+
+.segundoDiv > h2 {
+
+     margin-left: 12px;
+     padding: 5px;
+     
+}

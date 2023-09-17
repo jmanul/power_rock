@@ -1,0 +1,25 @@
+h1{
+
+     background-color: aquamarine;
+}
+
+div{
+
+     background-color: blue;
+     background-image: url(assets/sol.jpg);
+    
+     background-size: 50%;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+body {
+
+     background-image: url(assets/polar.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: fixed;
+     background-color: aqua;
+
+}
+

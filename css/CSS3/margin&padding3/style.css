@@ -1,0 +1,46 @@
+
+
+h1 {
+
+     border-top: solid 3px black;
+     margin-left: 4rem;
+}
+
+.parrafos {
+
+    
+     width: 80%;
+    
+     border-bottom: 3px solid black;
+     margin: 4rem 4rem 0 4rem;
+     
+}
+
+p {
+
+     padding: 10rem 0 10rem 0;
+
+
+}
+
+
+
+.image {
+
+     
+
+     /* display: inline-block; */
+
+     margin: auto;
+
+     width: 500px;
+
+     box-shadow: 10px 5px 10px  black;
+}
+
+img {
+
+     width: 100%;
+    
+
+}
