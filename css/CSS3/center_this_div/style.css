@@ -1,0 +1,30 @@
+.contenedor{
+
+     background: blueviolet;
+     width: 600px;
+     height: 300px;
+     border-radius: 10px;
+     border-style: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.caja{
+
+     background: wheat;
+     width: 100px;
+     height: 50px;
+     border-radius: 10px;
+     border-style: none;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+
+}
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+}
