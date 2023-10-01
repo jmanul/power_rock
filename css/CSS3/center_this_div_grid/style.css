@@ -1,14 +1,33 @@
 
-body {
+* {
+
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     height: 100vh;
 
      
 }
+
+body {
+
+     display: grid;
+     align-items: center;
+     justify-content: center;
+}
+
+
 .container {
 
      background-color: aquamarine;
-     border: 4px solid grey;
+     border: 4px dashed grey;
+     border-radius: 10px;
      width: 400px;
      height: 300px;
+     display: grid;
+     align-items: center;
+     justify-content: center;
 }
 
 .box {
@@ -16,7 +35,14 @@ body {
      background-color: brown;
      font-weight: bold;
      text-align: center;
-     border: 6px solid gray;
+     border: 5px dashed gray;
      width: 80px;
      height: 80px;
+     border-radius: 10px;
+
+}
+
+.box:hover {
+
+     background: rgb(223, 153, 153);
 }

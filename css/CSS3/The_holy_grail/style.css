@@ -1,0 +1,56 @@
+body, html {
+
+     height: 100%;
+     margin: 0;
+}
+
+.container {
+
+     text-align: center;
+     height: 100%;
+     padding: 16px;
+     box-sizing: border-box;
+}
+
+.container div {
+
+     padding: 15px;
+     font-size: 32px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: bold;
+     color:rgb(238, 242, 245);
+     border-radius: 15px;
+}
+
+.header {
+
+     background-color: rgb(135, 230, 230);
+}
+
+.sidebar {
+
+     background-color: rgb(188, 139, 235);
+}
+
+.nav {
+
+     background-color: rgb(223, 168, 144);
+}
+
+.article {
+
+     background-color: rgb(67, 136, 201);
+}
+
+.article p {
+     font-size: 18px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: bisque;
+     text-align: left;
+}
+
+.footer{
+
+     background-color: rgb(157, 228, 228);
+     
+}
