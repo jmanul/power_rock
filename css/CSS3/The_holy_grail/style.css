@@ -10,6 +10,16 @@ body, html {
      height: 100%;
      padding: 16px;
      box-sizing: border-box;
+     display: grid;
+     gap: 15px;
+     grid-template-columns: 33% 66%;
+     grid-template-rows: 1fc 1fc 5fc 1fc;
+     grid-template-areas: "header header"
+     "sidebar nav"
+     "sidebar article"
+     "footer footer";
+
+     
 }
 
 .container div {
@@ -25,21 +35,28 @@ body, html {
 .header {
 
      background-color: rgb(135, 230, 230);
+     grid-area: header;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 
 .sidebar {
 
      background-color: rgb(188, 139, 235);
+     grid-area: sidebar;
 }
 
 .nav {
 
      background-color: rgb(223, 168, 144);
+     grid-area: nav;
 }
 
 .article {
 
      background-color: rgb(67, 136, 201);
+     grid-area: article;
 }
 
 .article p {
@@ -52,5 +69,9 @@ body, html {
 .footer{
 
      background-color: rgb(157, 228, 228);
+     grid-area: footer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
      
 }

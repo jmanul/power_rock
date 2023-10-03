@@ -1,0 +1,196 @@
+* {
+
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.container {
+
+     text-align: center;
+     display: grid;
+     grid-template-columns: 20% 80%;
+     grid-template-rows: 1fc 1fc 5fc 1fc;
+     gap: 4px;
+     grid-template-areas: "header header"
+     "sidebar nav "
+     "sidebar article"
+     "footer footer";
+
+}
+
+.container div {
+
+     padding: 15px;
+     font-size: 25px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-weight: bold;
+     color: rgb(109, 98, 84);
+     border-radius: 10px;
+
+
+}
+
+.header {
+     
+     grid-area: header;
+     background-color: aquamarine;
+     display: grid;
+     grid-template-columns: 20% 80%;
+}
+
+li {
+
+     list-style: none;
+
+}
+
+.menu ul li {
+
+     font-size: 16px;
+    
+     
+   
+
+}
+
+.menu ul {
+
+    
+     display:flex;
+     align-items: center;
+     justify-content: end;
+     gap: 30px;
+
+}
+
+.sidebar {
+
+     grid-area: sidebar;
+
+     background-color: rgb(125, 179, 161);
+    
+     display: grid;
+     grid-template-columns: 100%;
+     grid-template-rows:  1fc 1fc 1fc ;
+    
+
+}
+
+.sidebar .photo {
+
+     background-color: rgb(187, 209, 157);
+     color: aliceblue;
+     font-size: 12px;
+     font-weight: normal;
+     border-radius: 10px;
+     display: grid;
+     grid-template-columns: 100%;
+  
+
+     gap: 50px;
+     
+     
+}
+
+.sidebar p{
+
+     background-color: blueviolet;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+}
+
+.sidebar .side-content {
+
+     background-color: rgb(119, 206, 206);
+     color: rgb(143, 113, 68);
+     font-size: 16px;
+     font-weight: normal;
+     display: grid;
+     align-items: center;
+
+    
+}
+
+.nav {
+     grid-area: nav;
+     background-color: bisque;
+   
+}
+
+.nav ul {
+
+     display: grid;
+     grid-template-columns: 33% 33% 33%;
+}
+
+.nav ul li {
+
+     font-size: 16px;
+     text-transform: uppercase;
+}
+
+.article {
+
+     grid-area: article;
+
+     background-color: rgb(136, 187, 231);
+     display: grid;
+     grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+     grid-template-rows: repeat(auto-fit , minmax(200px, 1fr));
+     gap: 15px;
+
+
+
+}
+
+.article p {
+
+     font-size: 18px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: black;
+     text-align: left;
+}
+
+.article .card {
+
+     background-color: rgb(228, 222, 216);
+     color: rgb(71, 59, 59);
+     text-align: center;
+     border-radius: 10px;
+     border: solid 1px grey;
+   
+
+}
+
+.card p {
+
+     color: rgb(101, 101, 158);
+     font-weight: normal;
+     font-size: 14px;
+
+}
+
+.card .title {
+
+     font-size: 20px;
+     text-align: center;
+
+}
+
+.footer {
+
+     grid-area: footer;
+
+     background-color: rgb(199, 218, 181);
+
+
+}
+
+.footer p {
+     font-size: 13px;
+     font-weight: lighter;
+}
