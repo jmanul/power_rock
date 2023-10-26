@@ -18,6 +18,26 @@ const nameFinder = [
      'Jessica',
      'Marc'
 ];
-function finderName(param) {
-     // insert code
+function finderName(param , element) {
+
+     for (x = 0; x < nameFinder.length; x++) {
+
+          // convierte a minusculas los dos elemntos a comparar
+          
+          if (nameFinder[x].toLowerCase() === element.toLowerCase()) {
+
+               console.log(`true en la posicion ${x + 1}`)
+
+          } else {
+
+               console.log('false')
+
+
+          }
+
+     }
 }
+
+let element = '';
+
+finderName(nameFinder , 'steve');
