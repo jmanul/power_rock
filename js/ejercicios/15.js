@@ -19,7 +19,7 @@ const counterWords = [
 function repeatCounter(param) {
 
 
-     const repeat = counterWords.slice(0, counterWords.length);
+     const repeat = counterWords.slice();
 
 
      for (x = 0; x < repeat.length; x++) {
