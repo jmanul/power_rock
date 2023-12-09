@@ -61,8 +61,8 @@ console.log(category)
 
 // este codigo haria lo mismo
 
-let categoryFinal =[... new Set(category)]
+let categoryFinal = [... new Set(category)];
 
 
 
-console.log(categoryFinal)
+console.log(categoryFinal);
