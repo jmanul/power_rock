@@ -22,7 +22,7 @@ const genderVideo = videogames.filter((gender) => {
      
 }, []);
 
-const scoreSuma = genderVideo.reduce((acc, next, idx) => {
+const scoreSuma = genderVideo.reduce((acc, next) => {
 
 
      return parseFloat(acc + next.score);
