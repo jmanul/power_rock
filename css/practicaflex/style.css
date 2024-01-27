@@ -1,0 +1,155 @@
+:root {
+      
+     /* colors */
+     --green : #57BF9C;
+     --black :  #00181C;
+     --red : #D30202;
+     --white : #FFFFFF;
+     --grey-1 : #7190a036;
+     --grey-2 : #c7dae0;
+     /* fonts */
+
+     --tittle : 'Secular One',
+          sans-serif;
+     --text : 'Inter',
+          sans-serif;
+
+
+}
+
+* {
+
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+     
+
+}
+
+body {
+
+     min-height: 100vh;
+     width: 100%;
+
+     display: flex;
+     justify-content: center;
+ 
+   
+
+}
+
+.fondo {
+
+     background-color:var(--grey-2);
+     min-height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -5;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+     overflow: hidden;
+}
+
+.fondo > span {
+
+     
+          color: var(--grey-1);
+          font-size: 600px;
+          font-family: var(--text);
+          font-weight: 700;
+          letter-spacing: 42px;
+        
+}
+
+header {
+     /* background-color: var(--black); */
+     min-width: 90%;
+     height: 80px;
+     position: absolute;
+     top : 3em;
+     padding: 6em;
+     display: flex;
+     align-items:center;
+     justify-content: space-between;
+     color:var(--white);
+     font-family: var(--text);
+     
+    
+}
+
+nav {
+     width: 30%;
+     
+} 
+
+nav > ul {
+
+     display: flex;
+     justify-content: space-between;
+    
+}
+
+a { 
+     color : var(--white);
+     font-family: var(--text);
+     font-weight: 600;
+} 
+
+header span {
+
+     padding-right: 15px;
+}
+main {
+     position: relative;
+     min-height: 100%;
+     margin-top: 5em;
+     z-index: -4;
+     background: rgb(65, 64, 61);
+     background: linear-gradient(0deg, rgba(65, 64, 61, 1) 13%, rgba(15, 18, 18, 1) 71%);
+     min-width: 90%;
+     display: flex;
+     justify-content: center; 
+   
+    
+     
+    
+}
+
+.title h2 {
+
+     position: relative;
+     top: 150px;
+     padding: .1em;
+     font-family: var(--tittle);
+     font-size:200px;
+     background: radial-gradient(circle, rgba(246, 243, 245, 0) 40%, rgba(255, 255, 255, 1) 51%);
+     color:transparent;
+     background-clip: text; 
+  
+     -webkit-text-stroke: 2px var(--white);
+
+     
+}
+
+.image {
+     
+     position:relative;
+   
+}
+
+.imagen-trasera {
+
+     position:absolute;
+     z-index: -3;
+}
+
+.imagen-frontal {
+
+     position: absolute;
+
+}
+
