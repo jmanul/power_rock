@@ -47,9 +47,9 @@ h3 {
      --white: #FFFFFF;
      --grey-1: #566a7436;
      --grey-2: #90a9b1;
-     --transparent:rgba(189, 183, 183, 0.151);
-
-
+     --grey-3:rgb(49, 49, 49);
+     --transparent:rgba(233, 227, 227, 0.075);
+ 
      /* fonts */
 
      --title-1: 'Amita',
@@ -160,12 +160,15 @@ h1 {
 
      font-family: var(--title-1);
      font-weight: 100px;
-     font-size: 30px;
+     font-size: 25px;
 }
 
 header span {
 
      padding-right: 15px;
+     font-size: 30px;
+     filter: blur(100%);
+ 
 }
 main {
      position: relative;
@@ -178,7 +181,8 @@ main {
      background: linear-gradient(0deg, rgba(65, 64, 61, 1) 13%, rgba(15, 18, 18, 1) 71%);
      min-width: 90%;
      display: flex;
-     justify-content: center;    
+     justify-content: center;  
+     
     
 }
 
@@ -257,26 +261,39 @@ main {
      bottom: 0;
      z-index: -3;
      max-height: 55em;
+     filter: blur(100%);
    
      
 }
 
 .sadow {
      position: absolute;
-          bottom: 250px;
-          right: 140px;
+          bottom: 255px;
+          right: 17em;
           z-index: -4;
           max-height: 55em;
-          background:var(--transparent);
-          width: 600px;
-          height: 480px;
-          
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-          
-
-     
+          border-radius:20px;
+          background:var(--grey-3);
+          width: 300px;
+          height: 477px;    
+         
 }
 
+          
+  .sadow-2 {
+       position: absolute;
+       bottom: 316px;
+       right: 7.5em;
+       transform: rotate(44deg);
+       z-index: -4;
+       max-height: 55em;
+       border-radius: 20px;
+       background:var(--grey-3);
+       width: 340px;
+       height: 355px;     
+     
+  }
+          
 .imagen-frontal {
 
      position: absolute;
