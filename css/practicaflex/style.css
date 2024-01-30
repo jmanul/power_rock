@@ -107,19 +107,19 @@ h3 {
      z-index: -7;
      display: flex;
      flex-direction: column;
-     /* align-items:center; */
-     justify-content:flex-start;
+     align-items:center;
      overflow: hidden;
 }
 
 .fondo > span {
       
-          top:0;
+          
           color: var(--grey-1);
           font-size: 600px;
           font-family: var(--text);
           font-weight: 700;
           height: 100%;
+     
           
         
         
@@ -132,6 +132,7 @@ header {
      top : 3em;
      padding: 4em ;
      display: flex;
+     
      align-items:center;
      justify-content: space-between;
      color:var(--white);
@@ -140,8 +141,16 @@ header {
     
 }
 
+.menu {
+
+     display: none;
+     
+}
+
+
 nav {
      width: 60%;
+   
      
 } 
 
@@ -149,6 +158,8 @@ nav > ul {
 
      display: flex;
      justify-content:right;
+   
+     
   
     
 }
@@ -158,6 +169,7 @@ nav > ul {
      font-family: var(--text);
      font-weight: 600;
      padding-left: 30px;
+     
 } 
 
 h1 {
@@ -171,13 +183,13 @@ header span {
 
      padding-right: 15px;
      font-size: 30px;
-     filter: blur(100%);
+     
  
 }
 main {
      position: relative;
      min-height: 100vh;
-     margin-top: 4em;
+     margin-top: 7em;
      /* cambio a movil */
      max-width: 90%; 
      z-index: -4;
@@ -192,9 +204,12 @@ main {
 
 
 
+
+
 .title h2 {
 
      position: relative;
+     
      top: 150px;
      padding: .1em;
      font-family: var(--tittle);
@@ -212,7 +227,7 @@ main {
 .action {
 
      position: relative;
-     z-index: 1;
+     z-index: 2;
      display: flex;
      flex-direction: column;
      align-items:flex-start;
@@ -221,7 +236,7 @@ main {
      color:var(--white);
      font-family: var(--text);
      width: 150px;
-     padding-top: 20px;
+     padding-top: 60px;
      letter-spacing: 1px;
      
 }
@@ -231,14 +246,14 @@ main {
      margin-top: 25px;
      width: 100%;
      padding:15px;
-    
+  
      /* border-radius: 10px; */
      border: none;
      color: var(--black);
-          font-family: var(--text);
-          font-weight: 600;
-          text-align: center;
-          cursor: pointer;
+     font-family: var(--text);     
+     font-weight: 600;
+     text-align: center;
+     cursor: pointer;
      background:var(--green);
      cursor:pointer;
      
@@ -248,13 +263,15 @@ main {
 
      color: var(--black);
      font-weight: 600;
-     font-family: var(--text);;
+     font-family: var(--text);
+     cursor:pointer;
 } 
 
 .imagen {
      position:relative;
+     margin-top: 58em;
      z-index: -2;
-     right: 55px;
+     right: 6em;
     
    
 }
@@ -265,9 +282,18 @@ main {
      bottom: 0;
      z-index: -3;
      max-height: 55em;
-     filter: blur(100%);
+    
    
      
+}
+
+.imagen-frontal {
+
+     position: absolute;
+     bottom: 0;
+     max-height: 55em;
+
+
 }
 
 .sadow {
@@ -283,6 +309,20 @@ main {
          
 }
 
+  .sadow-2 {
+       position: absolute;
+       bottom: 316px;
+       right: 7.5em;
+       transform: rotate(44deg);
+       z-index: -4;
+       max-height: 55em;
+       border-radius: 20px;
+       background: var(--grey-3);
+       width: 340px;
+       height: 355px;
+
+  }
+
 .light {
 
      position: absolute;
@@ -296,29 +336,6 @@ main {
                background: linear-gradient(0deg, rgba(31, 194, 31, 0.24) 5%, rgba(15, 18, 18, 0) 56%);
 }
 
-          
-  .sadow-2 {
-       position: absolute;
-       bottom: 316px;
-       right: 7.5em;
-       transform: rotate(44deg);
-       z-index: -4;
-       max-height: 55em;
-       border-radius: 20px;
-       background:var(--grey-3);
-       width: 340px;
-       height: 355px;     
-     
-  }
-          
-.imagen-frontal {
-
-     position: absolute;
-     bottom:0;
-     max-height: 55em;
-     
-
-}
 
 .articles {
 
@@ -343,13 +360,14 @@ main {
 }
 
 footer {
-     background:var(--white);
+     background:var(--grey-3);
+     color:var(--white);
      width: 90%;
      height: 150px;
      text-align: center;
       display: flex; 
       flex-direction: column;
-      gap: 10px;
+      gap: 30px;
       align-items: center; 
      justify-content: center; 
 }
@@ -359,14 +377,251 @@ footer > ul {
           display: flex;
           justify-content: center;
           align-items:center;
-          gap: 10px;
+          gap: 15px;
 }
 
-footer img {
+footer span {
 
-     height: 50px;
+     padding: 0 40px;
+}
+
+
+footer svg {
+
+     height: 40px;
+     width: 40px;
+     color:var(--green)
      
 }
 
+footer a {
+
+     color:var(--green);
+     font-weight: 600;
+}
+
+@media screen and (min-width: 1700px) {
+
+     .sadow {
+
+          width: 700px;
+
+     }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+     .title h2 {
+     
+               font-size: 150px;
+          }
+
+     main {
+          min-width: 100%;
+          margin-top: 0;
+     }
+
+     footer {
+          width: 100%;
+     }
+
+     .fondo {
+
+          display: none;
+     }
+
+     .articles {
+
+          max-width: 100%;
+          border-radius:10%;
+
+     }
+
+          header {
+               min-width: 100%;
+               top: 0;
+               padding: 2em;
+              
+          }
+
+}
 
 
+@media screen and (max-width: 1000px) {
+
+     .title h2 {
+
+          font-size: 100px;
+     }
+
+     .action {
+
+          left: 0;
+     }
+
+     .imagen-trasera {
+
+          max-height: 40em;
+
+     }
+
+     .imagen-frontal {
+
+          max-height: 40em;
+
+     }
+
+     .sadow {
+
+          display: none;
+     }
+
+     .sadow-2 {
+
+         display: none;
+
+     }
+
+
+}
+
+@media screen and (max-width: 850px) {
+
+     .title h2 {
+
+          font-size: 80px;
+     }
+
+           .action {
+     
+                left: 0.5em;
+           }
+
+     .imagen-trasera {
+
+          max-height: 35em;
+
+     }
+
+     .imagen-frontal {
+
+          max-height: 35em;
+
+     }
+
+          .post {
+               
+               height: 210px;
+               width: 200px;
+               gap: 15px;
+
+            
+          }
+
+
+}
+
+@media screen and (max-width: 750px) {
+
+     h1 {
+               width: 50%;
+               font-size: 15px;
+             
+          }
+            header span {
+     
+                 font-size: 15px;
+     
+            }
+
+     .imagen-trasera {
+
+          bottom:20em;
+
+     }
+
+     .imagen-frontal {
+
+        bottom:20em;
+
+     }
+
+     .light {
+
+          display: none;
+
+     }
+
+
+     .nav {
+
+          display: none;
+          content:none
+        
+          
+     }
+
+
+     .menu {
+
+          display: inline-block;
+        
+          
+
+     }
+
+     .menu > svg {
+
+          height: 40px;
+          width: 40px;
+          color:var(--white);
+     }
+
+          .articles {
+     
+               background: rgb(65, 64, 61);
+                    background: linear-gradient(0deg, rgba(65, 64, 61, 1) 53%, rgba(82, 148, 148, 0.301) 91%);
+                    height: 34.5%;
+                
+     
+          }
+
+                       .post {
+          
+                            background: none
+                       }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+
+
+     .imagen-trasera {
+
+          height: 400px;
+
+     }
+
+            .title h2 {
+     
+                 font-size: 50px;
+            }
+
+     .imagen-frontal {
+
+          height: 400px;
+
+     }
+
+     .articles {
+
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+     }
+
+}
