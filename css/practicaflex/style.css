@@ -14,7 +14,7 @@
 body, html {
 
      min-height: 100vh;
-     width: 100%;
+     min-width: 100%;
 
      display: flex;
      justify-content: center;
@@ -44,7 +44,7 @@ h3 {
      /* colors */
 
      --green: #4ff040;
-     --black: #00181C;
+     --black:rgba(15, 18, 18, 1);
      --red: #D30202;
      --white: #FFFFFF;
      --grey-1: #566a7436;
@@ -126,10 +126,12 @@ h3 {
 }
 
 header {
-     /* background-color: var(--black); */
+     
+     background: rgb(65, 64, 61);
+          background: linear-gradient(0deg, rgba(65, 64, 61, 0.055) 10%, rgba(15, 18, 18, 0.925) 71%);
      min-width: 90%;
      position: absolute;
-     top : 3em;
+     top : 7em;
      padding: 4em ;
      display: flex;
      
@@ -190,11 +192,10 @@ main {
      position: relative;
      min-height: 100vh;
      margin-top: 7em;
-     /* cambio a movil */
      max-width: 90%; 
      z-index: -4;
      background: rgb(65, 64, 61);
-     background: linear-gradient(0deg, rgba(65, 64, 61, 1) 13%, rgba(15, 18, 18, 1) 71%);
+     background: linear-gradient(0deg, rgba(65, 64, 61, 1) 13%, rgba(15, 18, 18, 0.651) 71%);
      min-width: 90%;
      display: flex;
      justify-content: center;  
@@ -213,7 +214,6 @@ main {
      top: 150px;
      padding: .1em;
      font-family: var(--tittle);
-     /* cambio a movil */
      font-size:160px;
      background: radial-gradient(circle, rgba(246, 243, 245, 0) 40%, rgba(255, 255, 255, 1) 51%);
      color:transparent;
@@ -230,7 +230,8 @@ main {
      z-index: 2;
      display: flex;
      flex-direction: column;
-     align-items:flex-start;
+     align-items:center;
+     justify-content: center;
      top:80px;
      left: 25px;
      color:var(--white);
@@ -247,11 +248,10 @@ main {
      width: 100%;
      padding:15px;
   
-     /* border-radius: 10px; */
+     border-radius: 10px;
      border: none;
      color: var(--black);
      font-family: var(--text);     
-     font-weight: 600;
      text-align: center;
      cursor: pointer;
      background:var(--green);
@@ -298,7 +298,7 @@ main {
 
 .sadow {
      position: absolute;
-          bottom: 255px;
+          bottom: 249px;
           right: 17em;
           z-index: -4;
           max-height: 55em;
@@ -311,7 +311,7 @@ main {
 
   .sadow-2 {
        position: absolute;
-       bottom: 316px;
+       bottom: 310px;
        right: 7.5em;
        transform: rotate(44deg);
        z-index: -4;
@@ -329,7 +329,7 @@ main {
           bottom: 0;
           left:0;
           z-index: -4;
-          width: 50%;
+          width: 100%;
           height: 100%;
           
           background: rgb(174, 236, 174);
@@ -417,10 +417,30 @@ footer a {
                font-size: 150px;
           }
 
+          header {
+
+               background:var(--black);
+               position: fixed;
+          }
+
      main {
           min-width: 100%;
           margin-top: 0;
+          background: rgb(65, 64, 61);
+               background: linear-gradient(0deg, rgba(65, 64, 61, 1) 13%, rgba(15, 18, 18, 1) 71%);
      }
+
+          .imagen-trasera {
+     
+               max-height: 52.5em;
+     
+          }
+     
+          .imagen-frontal {
+     
+               max-height: 52.5em;
+     
+          }
 
      footer {
           width: 100%;
@@ -429,13 +449,6 @@ footer a {
      .fondo {
 
           display: none;
-     }
-
-     .articles {
-
-          max-width: 100%;
-          border-radius:10%;
-
      }
 
           header {
@@ -474,13 +487,21 @@ footer a {
 
      .sadow {
 
-          display: none;
+          height: 0;
+          width: 0;
      }
 
      .sadow-2 {
 
-         display: none;
+         height: 0;
+         width: 0;
 
+     }
+
+
+     .articles {
+
+          min-width: 100%;
      }
 
 
@@ -535,21 +556,30 @@ footer a {
      
             }
 
+          
+                      .action button {
+          
+                         font-size: 12px;
+                           width: 90%;
+                           padding: 10px;
+          
+                      }
+          
+
      .imagen-trasera {
 
           bottom:20em;
+          max-height: 25em;
+          left: 9em;
+          
 
      }
 
      .imagen-frontal {
 
         bottom:20em;
-
-     }
-
-     .light {
-
-          display: none;
+        max-height: 25em;
+        left: 9em;
 
      }
 
@@ -557,7 +587,7 @@ footer a {
      .nav {
 
           display: none;
-          content:none
+       
         
           
      }
@@ -583,13 +613,16 @@ footer a {
                background: rgb(65, 64, 61);
                     background: linear-gradient(0deg, rgba(65, 64, 61, 1) 53%, rgba(82, 148, 148, 0.301) 91%);
                     height: 34.5%;
-                
+                border-top-right-radius:10%;border-top-left-radius:10%;
+                border-top: #4ff04063 1px solid;
+                max-width: 90%;
      
           }
 
                        .post {
           
-                            background: none
+                            background: none;
+
                        }
 
 
@@ -598,30 +631,51 @@ footer a {
 @media screen and (max-width: 550px) {
 
 
-
-     .imagen-trasera {
-
-          height: 400px;
-
-     }
-
             .title h2 {
      
-                 font-size: 50px;
+                 font-size: 40px;
             }
 
-     .imagen-frontal {
+                                .action {
+                                    
+                                     left: 3em;
+                                }
 
-          height: 400px;
 
+                       .imagen-trasera {
+          
+                            max-height: 20em;
+                            left: 0;
+          
+                       }
+          
+                       .imagen-frontal {
+          
+                            max-height: 20em;
+                            left: 0;
+          
+                       }
+
+                       .post h3 {
+
+                         font-size: 14px;
+                       }
+
+                       .post p , .post a {
+
+                         font-size: 11px;
+                       }
+                  
+     footer svg {
+
+          height: 20px;
      }
 
-     .articles {
+     footer > span {
 
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-        gap: 0;
+          font-size: 10px;
      }
+
+    
 
 }
