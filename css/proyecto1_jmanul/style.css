@@ -89,6 +89,7 @@ ul {
 header {
      position:sticky;
      height: 156px;
+     width: 100%;
      background-color:var(--pink)
      
 }
@@ -98,18 +99,19 @@ header {
      top: 30px;
      background-color:var(--blanco);
      width: 100%;
-     height: 68px;
+     height: 70px;
+     
 }
 
 .header-superior-element {
-     max-width: 1500px;
+     max-width: 1220px;
      width: 95%;
      justify-content: space-between;
   
 }
 
 .menu-header-medium {
-    
+     cursor: pointer;
      display: none;
      left: 10px;
      top: 20px;
@@ -118,7 +120,7 @@ header {
 }
 
 .menu-header-medium > button {
-     
+     cursor: pointer;
      border: none;
      padding-left: 5px;
      background-color: var(--blanco);
@@ -142,11 +144,13 @@ header {
 .container-search > input{
      width: 70%;
      border:none;
+     cursor: pointer;
      background-color:var(--blanco);
 
 }.container-search > button{
      width: 20%;
      border:none;
+     cursor: pointer;
      background-color:var(--blanco);
 
 }
@@ -162,7 +166,7 @@ header {
      bottom: 0;
      text-transform: uppercase;
      width: 100%;
-     height: 33%;
+     height: 51px;
      background-color: var(--blanco);
      border-bottom: solid 1px var(--gris-transparente);
      font-family: var(--texto);
@@ -171,15 +175,46 @@ header {
 
 }
 
-.header-inferior a:hover {
-
-     color: var(--pink);
+.header-inferior i {
+     font-size: .5rem;
+     padding-left: 6px;
 }
 
-.option-header-home {
-
-     gap: 40px;
+.header-inferior ul{
+     justify-content: flex-start;
+     width: 100%;
+     max-width: 1220px;
+     height: 100%; 
+     gap: 35px;
 }
+
+.header-inferior li {
+     
+     height: 100%;
+     border-bottom: 3px solid var(--blanco);
+}
+
+.bi-chevron-up {
+
+     display: none;
+}
+
+.header-inferior li:hover {
+
+     border-bottom: 3px solid var(--pink);     
+}
+
+.header-inferior li:hover .bi-chevron-up{
+
+     display: inline-block;
+}
+.header-inferior li:hover .bi-chevron-down{
+
+     display: none;
+}
+
+
+
 
 
 /* main */
@@ -194,6 +229,11 @@ header {
                
           }
 
+     .container-search {
+
+          display: none;
+     }     
+
      .header-inferior {
 
           display: none;
@@ -201,18 +241,36 @@ header {
      
      header {
 
-          height: 103px;
+          height: 105px;
+          
+     }
+
+     .none {
+
+          display: none;
+     }
+
+     .logo {
+          
+          position:absolute;
+          width:60%;
+          right: 20%;
      }
 
 
 }
 
-@media (max-width: 1200px) {   
+@media (max-width: 1250px) {   
 
 .header-superior-element {
 
           width: 80%;
           justify-content: space-between;
 
+     }
+
+     .header-inferior ul {
+
+          padding-left: 15px;
      }
 }
