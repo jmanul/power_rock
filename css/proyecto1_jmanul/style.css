@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
 
 * {
      box-sizing: border-box;
@@ -20,8 +20,11 @@
     
      --pink:rgb(248, 201, 209);
      --gris-texto: #f2f3eb;
-     --titulo: font-family: "Roboto", sans-serif;
+     --titulo: "Roboto", sans-serif;
      --texto: 'Open Sans', sans-serif;
+     --texto-deco: "Figtree", sans-serif;
+     --texto-deco-xs: "Varela Round",
+          sans-serif;
 }
 
 body {
@@ -33,9 +36,9 @@ body {
 h2 {
 
      font-family: var(--titulo);
-     font-size: 1.5em;
-     font-weight: 600;
-     color: rgb(65, 61, 61);
+     font-size: 3.2em;
+     font-weight: 800;
+     color: var(--negro);
 
 }
 
@@ -71,7 +74,8 @@ ul {
 
      list-style: none;
      gap: 15px;
-
+"Varela Round",
+     sans-serif
 }
 
 .flex-container{
@@ -82,16 +86,57 @@ ul {
      text-align: center;
 }
 
+.grid-container {
+
+     display: grid;
+      align-items: center; 
+      justify-items: center; 
+      justify-content: center; 
+      align-content: center; 
+      text-align: center; 
+      gap: 18px;
+
+}
+
 
 
 /* header */
+/* 
+@keyframes show {
+
+     from {
+          opacity: 0;
+          scale: 0;
+     }
+     
+     to {
+          opacity: 1;
+          scale: 100%;
+     }
+}
 
 header {
-     position:sticky;
+     view-timeline-name: --header;
+     view-timeline-axis: block;
+
+     animation-timeline: --header;
+     animation-name: show;
+
+     animation-range: entry 25% contain 30%;
+     animation-fill-mode:both;
+     animation-duration: 2ms;
+
+     
+   
+} */
+
+header {
+     position:fixed;
      height: 156px;
      width: 100%;
-     background-color:var(--pink)
-     
+     background-color:var(--pink);
+     z-index: 10;
+   
 }
 
 .header-superior{
@@ -217,7 +262,14 @@ header {
 
    /* imagen promocional  */
 
-.img-promo1 {
+.promocion {
+    
+    padding-top: 145px;
+
+}   
+
+.img-promo1,
+.img-promo3 {
      
      max-width: 1220px;
 }
@@ -274,10 +326,118 @@ header {
 
 .option-products a {
      max-width: 200px;
-     font-size: 13px;
-     font-family: var(--titulo);
+     font-size: 12px;
+     font-family: var(--texto-deco);
     
 }
+
+/*  imagen promocional */
+
+.img-promo3 img {
+
+     width: 100%;
+     cursor: pointer;
+     border:var(--pink) solid 5px;
+}
+
+/* enlaces linea de productos 2 */
+
+.option-products-2 {
+     text-align: left;
+     padding: 100px 50px;
+     width: 100%;
+     gap: 50px;
+     align-items: start;
+     
+     }
+
+.option-products-2 .title {
+
+     max-width: 220px;
+     
+}
+
+.enlaces-line {
+               position: relative;
+               max-width: 980px;
+               max-height: 470px;
+               grid-auto-rows: 1fr; 
+               grid-template-columns: repeat(3, 1fr);  
+           
+}
+
+.enlaces-line a {
+     position: relative;
+     max-width: 300px;
+     min-width: 200px;
+    
+}
+
+.game-tronos-line,
+.unicef,
+.novedades-line,
+.charms-line,
+.joyas-line,
+.Marvel-line {
+
+     background-size:200px;
+     
+}
+.game-tronos-line {
+     background-image: url(/assets/q124-b-pdp-model-styled-02-extended.jpg);
+     height: 260px;
+     position: absolute;
+     bottom: -30px;
+
+     
+}
+.novedades-line {
+     background-image: url(/assets/q124-b-pdp-model-styled-14-high-ext-megaspotter.jpg);
+     height: 200px;
+}
+.joyas-line {
+     background-image: url(/assets/q224-pre-mothersday-product-01-extended-02-1-1-.jpg);
+     height: 200px;
+}
+.charms-line {
+     background-image: url(/assets/2024-brand-product-02-extended-megaspotter.jpg);
+     height: 260px;
+     bottom: -30px;
+
+}
+.Marvel-line {
+     background-image: url(/assets/q124-b-pdp-product-styled-01-rgb-extended.jpg);
+     height: 200px;
+}
+.unicef {
+     background-image: url(/assets/videoframe_12269.png);
+     height: 260px;
+     bottom: 30px;
+
+}
+
+ .enlaces-line  div {
+    position: absolute;
+    bottom: 10px;
+     background-color:var(--blanco);
+     width: 80%;
+     height: 70px;
+     margin-left: 10px;
+     padding-top: 10px;
+         
+}
+
+.enlaces-line h3 {
+     width: 80%;
+     margin-left: 15px;
+     font-family: var(--texto-deco-xs);
+     color:var(--negro);
+     border-bottom: 2px var(--negro) solid;
+     padding-bottom: 10px;
+     font-weight: 400;
+     font-size: 13px;
+} 
+
 
 
 @media (max-width: 1025px) {
@@ -321,6 +481,24 @@ header {
           flex-wrap: wrap;
      }
 
+           .option-products a {
+                max-width: 140px;
+     
+           }
+     
+           .option-products img {
+     
+                max-height: 250px;
+                max-width: 140px;
+     
+           }
+
+                     .promocion {
+          
+                          padding-top: 95px;
+          
+                     }
+
        
 
 }
@@ -340,19 +518,67 @@ header {
      }
 }
 
+@media (max-width: 920px) {
+
+  .img-promo1{
+
+     min-width: 100%;
+
+  }
+
+  .img-promo1:hover .img-promo2{
+
+       min-width: 100%;
+
+  }
+
+    .option-products a {
+         max-width: 240px;
+
+    }
+
+    .option-products img {
+
+         max-height: 350px;
+         max-width: 240px;
+
+    }
+
+ }
+
+ @media (max-width: 760px) {
+
+      .option-products a {
+           max-width: 185px;
+
+      }
+
+      .option-products img {
+
+           max-height: 180px;
+           max-width: 185px;
+
+      }
+
+ }
 
 @media (max-width: 450px) {
 
      .option-products a {
-               max-width: 100px;
-           
-          }
-     
-          .option-products img {
-     
-               max-height: 100px;
-               max-width: 100px;
-     
-          }
+          max-width: 105px;
+
+     }
+
+     .option-products img {
+
+          max-height: 100px;
+          max-width: 105px;
+
+     }
 
 }
+
+
+
+
+
