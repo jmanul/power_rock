@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
 
 * {
@@ -12,13 +10,13 @@
 
 :root {
      --botones: #e0dddd;
-     --blanco:white;
+     --blanco: white;
      --negro: #181818;
      --gris: #f7f2f2;
      --gris-oscuro: #918989;
      --gris-transparente: #80808067;
-    
-     --pink:rgb(248, 201, 209);
+
+     --pink: rgb(248, 201, 209);
      --gris-texto: #f2f3eb;
      --titulo: "Roboto", sans-serif;
      --texto: 'Open Sans', sans-serif;
@@ -57,7 +55,7 @@ p {
 }
 
 li,
-a{
+a {
 
      text-decoration: none;
      color: var(--negro);
@@ -74,27 +72,28 @@ ul {
 
      list-style: none;
      gap: 15px;
-"Varela Round",
+     "Varela Round",
      sans-serif
 }
 
-.flex-container{
+.flex-container {
 
-     display:flex;
-     align-items:center;
+     display: flex;
+     align-items: center;
      justify-content: center;
      text-align: center;
+     align-content: center;
 }
 
 .grid-container {
 
      display: grid;
-      align-items: center; 
-      justify-items: center; 
-      justify-content: center; 
-      align-content: center; 
-      text-align: center; 
-      gap: 18px;
+     align-items: center;
+     justify-items: center;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     gap: 18px;
 
 }
 
@@ -131,28 +130,28 @@ header {
 } */
 
 header {
-     position:fixed;
+     position: fixed;
      height: 156px;
      width: 100%;
-     background-color:var(--pink);
+     background-color: var(--pink);
      z-index: 10;
-   
+
 }
 
-.header-superior{
+.header-superior {
      position: absolute;
      top: 30px;
-     background-color:var(--blanco);
+     background-color: var(--blanco);
      width: 100%;
      height: 70px;
-     
+
 }
 
 .header-superior-element {
      max-width: 1220px;
      width: 95%;
      justify-content: space-between;
-  
+
 }
 
 .menu-header-medium {
@@ -164,7 +163,7 @@ header {
      gap: 4px;
 }
 
-.menu-header-medium > button {
+.menu-header-medium>button {
      cursor: pointer;
      border: none;
      padding-left: 5px;
@@ -175,7 +174,7 @@ header {
 /* barra de busquedas */
 
 .container-search {
-     
+
      background-color: var(--blanco);
      border: 1px solid var(--gris-transparente);
      width: 210px;
@@ -186,17 +185,19 @@ header {
 
 }
 
-.container-search > input{
+.container-search>input {
      width: 70%;
-     border:none;
+     border: none;
      cursor: pointer;
-     background-color:var(--blanco);
+     background-color: var(--blanco);
 
-}.container-search > button{
+}
+
+.container-search>button {
      width: 20%;
-     border:none;
+     border: none;
      cursor: pointer;
-     background-color:var(--blanco);
+     background-color: var(--blanco);
 
 }
 
@@ -225,16 +226,16 @@ header {
      padding-left: 6px;
 }
 
-.header-inferior ul{
+.header-inferior ul {
      justify-content: flex-start;
      width: 100%;
      max-width: 1220px;
-     height: 100%; 
+     height: 100%;
      gap: 35px;
 }
 
 .header-inferior li {
-     
+
      height: 100%;
      border-bottom: 3px solid var(--blanco);
 }
@@ -246,55 +247,56 @@ header {
 
 .header-inferior li:hover {
 
-     border-bottom: 3px solid var(--pink);     
+     border-bottom: 3px solid var(--pink);
 }
 
-.header-inferior li:hover .bi-chevron-up{
+.header-inferior li:hover .bi-chevron-up {
 
      display: inline-block;
 }
-.header-inferior li:hover .bi-chevron-down{
+
+.header-inferior li:hover .bi-chevron-down {
 
      display: none;
 }
 
 /* main */
 
-   /* imagen promocional  */
+/* imagen promocional  */
 
 .promocion {
-    
-    padding-top: 145px;
 
-}   
+     padding-top: 145px;
+
+}
 
 .img-promo1,
 .img-promo3 {
-     
+
      max-width: 1220px;
 }
 
 
 .img-promo1 img {
-       width: 100%; 
-       cursor: pointer;    
-  }
+     width: 100%;
+     cursor: pointer;
+}
 
 .img-promo2 img {
      display: none;
      width: 100%;
 }
 
-.img-promo1:hover .img-promo2 img{
+.img-promo1:hover .img-promo2 img {
 
      display: flex;
-     
+
 }
 
-.img-promo1:hover img{
-     
+.img-promo1:hover img {
+
      display: none;
-     
+
 }
 
 /* enlaces a lineas de productos */
@@ -310,25 +312,25 @@ header {
      padding-top: 8rem;
      max-width: 1220px;
      gap: 10px;
-    
+
 }
 
 .option-products img {
 
-     box-sizing:content-box;
+     box-sizing: content-box;
      max-height: 140px;
      max-width: 170px;
      padding: 40px 0;
-     
-     
-    
+
+
+
 }
 
 .option-products a {
      max-width: 200px;
      font-size: 12px;
      font-family: var(--texto-deco);
-    
+
 }
 
 /*  imagen promocional */
@@ -337,7 +339,7 @@ header {
 
      width: 100%;
      cursor: pointer;
-     border:var(--pink) solid 5px;
+     border: var(--pink) solid 5px;
 }
 
 /* enlaces linea de productos 2 */
@@ -348,29 +350,31 @@ header {
      width: 100%;
      gap: 50px;
      align-items: start;
-     
-     }
+
+}
 
 .option-products-2 .title {
 
      max-width: 220px;
-     
+
+
 }
 
 .enlaces-line {
-               position: relative;
-               max-width: 980px;
-               max-height: 470px;
-               grid-auto-rows: 1fr; 
-               grid-template-columns: repeat(3, 1fr);  
-           
+     position: relative;
+     max-width: 980px;
+     height: 100%;
+     grid-auto-rows: 1fr;
+     grid-template-columns: repeat(3, 1fr);
+   
+
 }
 
 .enlaces-line a {
      position: relative;
-     max-width: 300px;
+     max-width: 400px;
      min-width: 200px;
-    
+
 }
 
 .game-tronos-line,
@@ -380,35 +384,41 @@ header {
 .joyas-line,
 .Marvel-line {
 
-     background-size:200px;
-     
+     background-size: 200px;
+
 }
+
 .game-tronos-line {
      background-image: url(/assets/q124-b-pdp-model-styled-02-extended.jpg);
      height: 260px;
      position: absolute;
      bottom: -30px;
 
-     
+
 }
+
 .novedades-line {
      background-image: url(/assets/q124-b-pdp-model-styled-14-high-ext-megaspotter.jpg);
      height: 200px;
 }
+
 .joyas-line {
      background-image: url(/assets/q224-pre-mothersday-product-01-extended-02-1-1-.jpg);
      height: 200px;
 }
+
 .charms-line {
      background-image: url(/assets/2024-brand-product-02-extended-megaspotter.jpg);
      height: 260px;
      bottom: -30px;
 
 }
+
 .Marvel-line {
      background-image: url(/assets/q124-b-pdp-product-styled-01-rgb-extended.jpg);
      height: 200px;
 }
+
 .unicef {
      background-image: url(/assets/videoframe_12269.png);
      height: 260px;
@@ -416,52 +426,297 @@ header {
 
 }
 
- .enlaces-line  div {
-    position: absolute;
-    bottom: 10px;
-     background-color:var(--blanco);
+.enlaces-line div {
+     position: absolute;
+     bottom: 10px;
+     background-color: var(--blanco);
      width: 80%;
      height: 70px;
      margin-left: 10px;
      padding-top: 10px;
-         
+
 }
 
 .enlaces-line h3 {
      width: 80%;
      margin-left: 15px;
      font-family: var(--texto-deco-xs);
-     color:var(--negro);
+     color: var(--negro);
      border-bottom: 2px var(--negro) solid;
      padding-bottom: 10px;
      font-weight: 400;
      font-size: 13px;
-} 
+}
+
+/* enlaces de productos */
+
+.option-products {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 5px;
+     margin-bottom: 50px;
+}
+
+.option-products li {
+
+     list-style: none;
+}
+
+.option-products img {
+
+
+     max-width: 280px;
+     width: 100%;
+     padding: 1em;
+}
+
+.products-deco {
+
+     font-size: 4em;
+     font-family: var(--titulo-decorativo);
+     font-weight: 100;
+     color: var(--gris-oscuro);
+}
+
+.opcion-products-titulo {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1em;
+     padding: 1em;
+     flex-wrap: wrap;
+     margin-left: 1em;
+     margin-top: 4em;
+
+}
+
+.opcion-products img {
+
+
+     width: 180px;
+
+     padding: 1em;
+}
+
+.opcion-products-article {
+
+     flex: 0 0 auto;
+     width: 193px;
+     height: 100%;
+     padding: .4em;
+     font-size: 13px;
+
+
+
+}
+
+
+.opcion-products-article:hover {
+
+     border: .4px solid var(--gris-transparente);
+
+
+}
+
+.articles {
+
+     display: flex;
+     flex-wrap: nowrap;
+     overflow-x: hidden;
+     margin: 1em 2em;
+     justify-content: start;
+
+
+
+}
+
+.articles:hover {
+
+     overflow: auto;
+
+}
+
+
+.opcion-products-article .descripcion::after {
+
+     content: "⭐⭐⭐⭐⭐(5) ";
+     display: block;
+     margin-top: 1em;
+     font-size: 17px;
+
+
+}
+
+
+.cuore {
+
+     display: flex;
+     align-items: top;
+     justify-content: space-between;
+}
+
+.cuore h3 {
+
+     margin-right: 10px;
+}
+
+.cuore i {
+
+     font-size: 1.5em;
+     font-weight: bolder;
+}
+
+.precios {
+
+     margin-top: 1em;
+     width: max-content;
+}
+
+.precio {
+
+     font-size: 15px;
+     font-weight: 700;
+}
+
+.precio-anterior {
+
+     font-size: 10px;
+     font-weight: 100;
+     color: var(--gris-oscuro);
+     text-decoration: line-through;
+}
+
+.descuento {
+
+     font-size: 10px;
+     color: var(--blanco);
+     background-color: var(--rojo);
+     padding: 5px 7px;
+     border-radius: 10px;
+     margin-left: 10px;
+}
+
+.precio-aplazado {
+
+     margin-top: 8px;
+     font-size: 11px;
+     font-weight: 300;
+}
+
+#vendidos .cuore i {
+
+     display: none;
+}
+
+#sin-descuento span {
+
+     display: none;
+}
+
+/* carta de presentacion */
+
+.texto {
+
+     background-color: var(--gris-texto);
+     margin: 0 6em;
+     font-size: 14px;
+     padding: 2em 4em 2em 1.5em;
+     text-align: start;
+
+}
+
+
+
+.icon {
+
+     font-size: 20px;
+     padding: 0 15px;
+}
+
+.oils {
+
+     font-size: 23px;
+     text-align: center;
+}
+
+.titular {
+
+     text-align: center;
+     padding: 1em;
+     font-size: 15px;
+}
+
+/* busquedas frecuentes */
+
+.mas-frecuentes {
+
+     padding: 0 6em;
+}
+
+.mas-frecuentes ul {
+
+     display: flex;
+
+     overflow-x: hidden;
+     text-align: center;
+     padding: 1em;
+
+
+}
+
+.mas-frecuentes ul:hover {
+
+     overflow-x: auto;
+}
+
+
+.mas-frecuentes li {
+
+     flex: 0 0 auto;
+     width: max-content;
+     padding: 5px 30px;
+     border-radius: 5px;
+     box-shadow: 0 1px 0 0 rgb(196, 194, 194);
+     background-color: var(--botones);
+
+}
+
+.mas-frecuentes a {
+
+     color: var(--gris-oscuro);
+     font-size: 17px;
+}
+
+.mas-frecuentes a:hover {
 
 
 
 @media (max-width: 1025px) {
 
      .menu-header-medium {
-               display: flex;
-               
-               
-          }
+          display: flex;
+
+
+     }
 
      .container-search {
 
           display: none;
-     }     
+     }
 
      .header-inferior {
 
           display: none;
-     }  
-     
+     }
+
      header {
 
           height: 105px;
-          
+
      }
 
      .none {
@@ -470,42 +725,86 @@ header {
      }
 
      .logo {
-          
-          position:absolute;
-          width:60%;
+
+          position: absolute;
+          width: 60%;
           right: 20%;
      }
 
-     .enlaces-products{
+     .enlaces-products {
 
           flex-wrap: wrap;
      }
 
-           .option-products a {
-                max-width: 140px;
-     
-           }
-     
-           .option-products img {
-     
-                max-height: 250px;
-                max-width: 140px;
-     
-           }
+     .option-products a {
+          max-width: 140px;
 
-                     .promocion {
-          
-                          padding-top: 95px;
-          
-                     }
+     }
 
-       
+     .option-products img {
+
+          max-height: 250px;
+          max-width: 140px;
+
+     }
+
+     .promocion {
+
+          padding-top: 95px;
+
+     }
+
+     .option-products-2 {
+
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+
+     }
+
+     .option-products-2 .title {
+
+          max-width: 100%;
+
+     }
+
+     .enlaces-line {
+
+          width: 90%;
+
+
+     }
+
+     .enlaces-line a {
+
+          width: 100%;
+
+     }
+
+     .option-products-2 .title {
+
+
+          font-size: 35px;
+
+     }
+
+     .game-tronos-line,
+     .unicef,
+     .charms-line,
+     .novedades-line,
+     .joyas-line,
+     .Marvel-line {
+
+          background-size: 100%;
+
+
+     }
 
 }
 
-@media (max-width: 1250px) {   
+@media (max-width: 1250px) {
 
-.header-superior-element {
+     .header-superior-element {
 
           width: 80%;
           justify-content: space-between;
@@ -520,47 +819,107 @@ header {
 
 @media (max-width: 920px) {
 
-  .img-promo1{
+     .img-promo1 {
 
-     min-width: 100%;
+          min-width: 100%;
 
-  }
+     }
 
-  .img-promo1:hover .img-promo2{
+     .img-promo1:hover .img-promo2 {
 
-       min-width: 100%;
+          min-width: 100%;
 
-  }
+     }
 
-    .option-products a {
-         max-width: 240px;
+     .option-products a {
+          max-width: 240px;
 
-    }
+     }
 
-    .option-products img {
+     .option-products img {
 
-         max-height: 350px;
-         max-width: 240px;
+          max-height: 350px;
+          max-width: 240px;
 
-    }
+     }
 
- }
+}
 
- @media (max-width: 760px) {
+@media (max-width: 760px) {
 
-      .option-products a {
-           max-width: 185px;
+     .option-products a {
+          max-width: 185px;
 
-      }
+     }
 
-      .option-products img {
+     .option-products img {
 
-           max-height: 180px;
-           max-width: 185px;
+          max-height: 180px;
+          max-width: 185px;
 
-      }
+     }
 
- }
+     .enlaces-line {
+
+          grid-template-columns: repeat(2, 1fr);
+          
+     }
+
+             .enlaces-line {
+     
+                  width: 100%;
+     
+     
+             }
+     
+             .enlaces-line a {
+     
+                  width: 100%;
+                  
+     
+             }
+     
+             .option-products-2 .title {
+     
+     
+                  font-size: 35px;
+     
+             }
+
+        .novedades-line {
+
+          grid-column: 1/2;
+
+}
+
+.unicef{
+
+     grid-column: 1/2;
+     grid-row: 3/4;
+}
+
+.Marvel-line {
+
+     grid-column: 2/3;
+     grid-row: 1/2;
+
+}
+
+.charms-line {
+
+     top:-30px
+}
+
+.joyas-line {
+     
+     top: -30px;
+     height: 260px;
+     background-image: url(/assets/joyas2.jpg)
+}
+
+
+}
+
 
 @media (max-width: 450px) {
 
@@ -576,9 +935,13 @@ header {
 
      }
 
-}
+    .option-products-2 .title {
 
+     font-size: 20px;
+    }
 
+    }
 
+   
 
 
