@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,214 +11,287 @@
 
 
 <body>
-     <header >
+     <header>
 
-      <div class="header-superior flex-container">
+          <div class="header-superior flex-container">
 
                <!-- menu header para pantallas de menos de 1025px -->
-              <nav>
-               <div class="menu-header-medium flex-container">
-                    <button><i class="bi bi-list fa-5x"></i></button>
-                    <button><i class="bi bi-search"></i></button>
-               </div>
-          </nav>
-              
+               <nav>
+                    <div class="menu-header-medium flex-container">
+                         <button><i class="bi bi-list fa-5x"></i></button>
+                         <button><i class="bi bi-search"></i></button>
+                    </div>
+               </nav>
+
                <!-- menu para pantallas de mas de 1025px -->
-         <div class="header-superior-element flex-container">
-              <a class="flex-container" href="https://es.pandora.net/es/"><div class="logo"><h1><img src="/assets/logo_pandora.png" alt="logo de pandora"></h1>
-          </div></a>
-            <!-- barra de busqueda -->
+               <div class="header-superior-element flex-container">
+                    <a class="flex-container" href="https://es.pandora.net/es/">
+                         <div class="logo">
+                              <h1><img src="/assets/logo_pandora.png" alt="logo de pandora"></h1>
+                         </div>
+                    </a>
+                    <!-- barra de busqueda -->
 
-       <div class="header-superior-right flex-container">
-             <div class="container-search flex-container">
-               <input type="text" name="container-search" id="container-search" placeholder="Buscar">
-               <button class="search"><i class="bi bi-search"></i></button>
+                    <div class="header-superior-right flex-container">
+                         <div class="container-search flex-container">
+                              <input type="text" name="container-search" id="container-search" placeholder="Buscar">
+                              <button class="search"><i class="bi bi-search"></i></button>
+                         </div>
+
+                         <nav class="option-header">
+                              <ul class="option-header flex-container">
+                                   <li class="none"><a href="#"><i class="bi bi-heart"></i></i></a></li>
+                                   <li class="none"><a href="#"><i class="bi bi-geo-alt"></i></a></li>
+                                   <li><a href="#"><i class="bi bi-person"></i></a></li>
+                                   <li><a href="#"><i class="bi bi-bag"></i></a></li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
           </div>
-
-          <nav class="option-header">
-               <ul class="option-header flex-container">
-                    <li class="none"><a href="#"><i class="bi bi-heart"></i></i></a></li>
-                    <li class="none"><a href="#"><i class="bi bi-geo-alt"></i></a></li>
-                    <li><a href="#"><i class="bi bi-person"></i></a></li>
-                    <li><a href="#"><i class="bi bi-bag"></i></a></li>
-               </ul>
-          </nav>
-       </div>
-         </div>
-      </div>
 
           <nav class="header-inferior flex-container">
                <ul class="option-header-inferior flex-container">
-                    <li class="flex-container"><a href="#">NOVEDADES<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a>
+                    <li class="flex-container"><a href="#">NOVEDADES<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a>
                     </li>
-                    <li class="flex-container"><a href="#">CHARMS Y PULSERAS<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li> 
-                    <li class="flex-container"><a href="#">ANILLOS<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li> 
-                    <li class="flex-container"><a href="#">PENDIENTES<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li> 
-                    <li class="flex-container"><a href="#">COLLARES<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li> 
-                    <li class="flex-container"><a href="#">COLECCIONES<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li> 
-                    <li class="flex-container"><a href="#">IDEAS DE REAGALO<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li>
-                    <li class="flex-container"><a href="#">DESCUBRIR<i class="bi bi-chevron-down"></i><i class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">CHARMS Y PULSERAS<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">ANILLOS<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">PENDIENTES<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">COLLARES<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">COLECCIONES<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">IDEAS DE REAGALO<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
+                    <li class="flex-container"><a href="#">DESCUBRIR<i class="bi bi-chevron-down"></i><i
+                                   class="bi bi-chevron-up"></i></a></li>
                </ul>
-          </nav>          
+          </nav>
      </header>
 
      <main>
-            <!-- espacio par imagenes promocionales -->
+          <!-- espacio par imagenes promocionales -->
 
           <section class="promocion flex-container" id="promocion1">
 
                <picture class="img-promo1 flex-container">
                     <source media="(min-width:920px)" srcset="/assets/hero-sisters-desktop.jpg">
                     <img class="alterna" src="/assets/hero-sisters-mobile.jpg" alt="promocion">
-                        <picture class="img-promo2 flex-container">
-                    <source media="(min-width:920px)" srcset="/assets/microsoftteams-image-3-1-.jpg">
-                    <img class="alterna" src="assets/hero-sisters-hand-mobile.jpg" alt="promocion">
-                    
-               </picture> 
-           </picture>  
-            
+                    <picture class="img-promo2 flex-container">
+                         <source media="(min-width:920px)" srcset="/assets/microsoftteams-image-3-1-.jpg">
+                         <img class="alterna" src="assets/hero-sisters-hand-mobile.jpg" alt="promocion">
+
+                    </picture>
+               </picture>
+
 
           </section>
 
-                   <!-- enlaces a distintas lineas de productos -->
+          <!-- enlaces a distintas lineas de productos -->
 
           <section class="option-products flex-container" id="option-products">
-              
-              <div class="enlaces-products flex-container">
-                    <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer"><img
-                                   src="/assets/novedades.jpg"
-                                   alt="novedades">NOVEDADES</a> 
-                                   <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer"><img
-                                   src="/assets/charms.png"
-                                   alt="novedades">CHARMS</a> 
-                                   <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer"><img
-                                   src="/assets/pulseras.png"
-                                   alt="novedades">PULSERAS</a> 
-                                   <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer"><img
-                                   src="/assets/anillos.png"
-                                   alt="novedades">ANILLOS</a> 
-                                   <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer"><img
-                                   src="/assets/pendientes.png"
-                                   alt="novedades">PENDIENTES</a> 
-                                   <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer"><img
-                                   src="/assets/collares.png"
-                                   alt="novedades">COLLARES</a>
-              </div>
+
+               <div class="enlaces-products flex-container">
+                    <a href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true"
+                         target="_blank" rel="noopener noreferrer"><img src="/assets/novedades.jpg" alt="novedades">
+                         <h3>NOVEDADES</h3>
+                    </a>
+                    <a href="https://es.pandora.net/es/charms-y-pulseras/charms/?srule=favourites-7-days-best-matches&start=0&sz=52#icid=e:homepage:Category:Charms:CycleG"
+                         target="_blank" rel="noopener noreferrer"><img src="/assets/charms.png" alt="novedades">
+                         <h3>CHARMS</h3>
+                    </a>
+                    <a href="https://es.pandora.net/es/pulseras/?srule=favourites-7-days-best-matches&start=0&sz=52#icid=e:homepage:Category:Pulseras:CycleG"
+                         target="_blank" rel="noopener noreferrer"><img src="/assets/pulseras.png" alt="novedades">
+                         <h3>PULSERAS</h3>
+                    </a>
+                    <a href="https://es.pandora.net/es/pendientes/pendientes/?srule=favourites-7-days-best-matches&start=0&sz=52#icid=e:homepage:Category:Pendientes:CycleG"
+                         target="_blank" rel="noopener noreferrer"><img src="/assets/anillos.png" alt="novedades">
+                         <h3>ANILLOS</h3>
+                    </a>
+                    <a href="https://es.pandora.net/es/anillos/anillos/?srule=favourites-7-days-best-matches&start=0&sz=52#icid=e:homepage:Category:Anillos:CycleG"
+                         target="_blank" rel="noopener noreferrer"><img src="/assets/pendientes.png" alt="novedades">
+                         <h3>PENDIENTES</h3>
+                    </a>
+                    <a href="https://es.pandora.net/es/collares/collares/?srule=favourites-7-days-best-matches&start=0&sz=54#icid=e:homepage:Category:Collares:CycleG"
+                         target="_blank" rel="noopener noreferrer"><img src="/assets/collares.png" alt="novedades">
+                         <h3>COLLARES</h3>
+                    </a>
+               </div>
           </section>
-           <section class="promocion promocion-3 flex-container" id="promocion-2">
+          <section class="promocion promocion-3 flex-container" id="promocion-2">
 
                <picture class="img-promo3 flex-container">
                     <source media="(min-width:920px)" srcset="/assets/01-promomodule-desktop-3200x336-es.jpg">
-                    <img class="alterna" src="/assets/02-promomodule-mobile-3962x321-es.jpg" alt="promocion"> 
-           </picture>  
+                    <img class="alterna" src="/assets/02-promomodule-mobile-3962x321-es.jpg" alt="promocion">
+               </picture>
           </section>
-           <section class="option-products-2  flex-container" id="option-products-2">
+          <section class="option-products-2  flex-container" id="option-products-2">
                <h2 class="title">Para cada momento especial</h2>
-              
-              <div class="enlaces-line grid-container">
-                                   <a class="game-tronos-line"
-                                    href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer">
-                                    <div class="title-line"><h3>Game of Trones X PANDORA</h3></div>
-                                   </a> 
-                                    <a class="novedades-line"
-                                    href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer">
-                                    <div class="title-line"><h3>DESCUBRE LAS NOVEDADES</h3></div>
-                                   </a> 
-                                    <a class="charms-line"
-                                    href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer">
-                                    <div class="title-line"><h3>CHARMS DESDE 19€</h3></div>
-                                   </a> 
-                                    <a class="joyas-line"
-                                    href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer">
-                                    <div class="title-line"><h3>JOYAS DE PERLAS</h3></div>
-                                   </a> 
-                                    <a class="unicef"
-                                    href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer">
-                                    <div class="title-line"><h3>PANDORA X UNICEF</h3></div>
-                                   </a> 
-                                    <a class="Marvel-line"
-                                    href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true" target="_blank" rel="noopener noreferrer">
-                                    <div class="title-line"><h3>MARVEL X PANDORA</h3></div>
-                                   </a> 
-                             
-              </div>
+
+               <div class="enlaces-line grid-container">
+                    <a class="game-tronos-line"
+                         href="https://es.pandora.net/es/colecciones/colecciones/juego-de-tronos/?promoToolkitData=%7Bparent%3Dcom.pandora.lc3.contentbeans.PDCollectionImpl%24%24%5Bid%3D2856368%5D%2C%20hasPromoToolkit%3Dfalse%7D&currentTeasable=com.pandora.lc3.contentbeans.PDCollectionImpl%24%24%5Bid%3D2856368%5D&seoPlacementIndex=2&elementIndex=0&salesToolkitData=%7BsalesToolkitCheck%3Dfalse%2C%20salesToolkitTeaser%3Dcom.coremedia.objectserver.view.freemarker.CmUndefined%407716cfeb%2C%20salesToolkitItem%3D%2C%20salesToolkitTeaserMedia%3D%5B%5D%2C%20hasSalesToolkit%3Dfalse%7D&enableAnimations=true&numberOfItems=6&seoModuleIndex=2&borderItem=false"
+                         target="_blank" rel="noopener noreferrer">
+                         <div class="title-line">
+                              <h3>Game of Trones X PANDORA</h3>
+                         </div>
+                    </a>
+                    <a class="novedades-line"
+                         href="https://es.pandora.net/es/novedades/?seoPlacementIndex=2&seoModuleIndex=2&enableAnimations=true"
+                         target="_blank" rel="noopener noreferrer">
+                         <div class="title-line">
+                              <h3>DESCUBRE LAS NOVEDADES</h3>
+                         </div>
+                    </a>
+                    <a class="charms-line"
+                         href="https://es.pandora.net/es/charms-y-pulseras/charms/?srule=price-low-to-high&start=0&sz=52#icid=e:homepage:MegaSpotter:MomentsCharms:Navidad"
+                         target="_blank" rel="noopener noreferrer">
+                         <div class="title-line">
+                              <h3>CHARMS DESDE 19€</h3>
+                         </div>
+                    </a>
+                    <a class="joyas-line"
+                         href="https://es.pandora.net/es/colecciones/colecciones/marvel/?promoToolkitData=%7Bparent%3Dcom.pandora.lc3.contentbeans.PDCollectionImpl%24%24%5Bid%3D2856368%5D%2C%20hasPromoToolkit%3Dfalse%7D&currentTeasable=com.pandora.lc3.contentbeans.PDCollectionImpl%24%24%5Bid%3D2856368%5D&seoPlacementIndex=2&elementIndex=4&salesToolkitData=%7BsalesToolkitCheck%3Dfalse%2C%20salesToolkitTeaser%3Dcom.coremedia.objectserver.view.freemarker.CmUndefined%407716cfeb%2C%20salesToolkitItem%3D%2C%20salesToolkitTeaserMedia%3D%5B%5D%2C%20hasSalesToolkit%3Dfalse%7D&enableAnimations=true&numberOfItems=6&seoModuleIndex=2&borderItem=false"
+                         target="_blank" rel="noopener noreferrer">
+                         <div class="title-line">
+                              <h3>JOYAS DE PERLAS</h3>
+                         </div>
+                    </a>
+                    <a class="unicef" href="https://es.pandora.net/es/colecciones/colecciones/pandora-timeless/"
+                         target="_blank" rel="noopener noreferrer">
+                         <div class="title-line">
+                              <h3>PANDORA X UNICEF</h3>
+                         </div>
+                    </a>
+                    <a class="Marvel-line"
+                         href="https://es.pandora.net/es/charms-y-pulseras/pandora-moments/?promoToolkitData=%7Bparent%3Dcom.pandora.lc3.contentbeans.PDCollectionImpl%24%24%5Bid%3D2856368%5D%2C%20hasPromoToolkit%3Dfalse%7D&currentTeasable=com.pandora.lc3.contentbeans.PDCollectionImpl%24%24%5Bid%3D2856368%5D&seoPlacementIndex=2&elementIndex=5&salesToolkitData=%7BsalesToolkitCheck%3Dfalse%2C%20salesToolkitTeaser%3Dcom.coremedia.objectserver.view.freemarker.CmUndefined%407716cfeb%2C%20salesToolkitItem%3D%2C%20salesToolkitTeaserMedia%3D%5B%5D%2C%20hasSalesToolkit%3Dfalse%7D&enableAnimations=true&numberOfItems=6&seoModuleIndex=2&borderItem=false"
+                         target="_blank" rel="noopener noreferrer">
+                         <div class="title-line">
+                              <h3>MARVEL X PANDORA</h3>
+                         </div>
+                    </a>
+
+               </div>
           </section>
 
-           <!-- productos favoritos -->
+          <!-- productos favoritos -->
 
-          <section class="opcion-products" id="favoritos">
-               <div class="opcion-products-titulo">
-                    <h3 class="products">Nuestros favoritos</h3>
-                    
+          <section class="option-products-favoritos " id="favoritos">
+               <div class="option-products-favoritos-titulo">
+                    <h2 class="products flex-container">Nuestros favoritos</h2>
+
                </div>
                <div class="articles flex-container">
-                    <article class="opcion-products-article favoritos flex-container">
+                    <article class="option-products-article favoritos flex-container">
                          </a>
                          <a href="https://es.pandora.net/es/pulseras/pulseras-de-cadena/pulsera-moments-cadena-de-serpiente-con-cierre-de-corazon/590719.html"
-                       target="_blank" rel="noopener noreferrer">
-                              <img src="/assets/producto1.jpg"
-                                   alt="pulsera moments">
+                              target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/producto1.jpg" alt="pulsera moments">
+                              <i class="bi bi-heart"></i>
                               <div class="cuore">
-                                   <h3>Pulsera oments ,cadena de serpiente con cierre de corazon</h3>
+                                   <p class="oferta">
+                                        2 CHARMS + 1 pulsera = 99€
+                                   </p>
+                                   <p>Pulsera Moments ,cadena de serpiente con cierre de corazon</p>
+                                   <p class="precio">59,00 €</p>
                               </div>
                          </a>
                     </article>
 
-                     <article class="opcion-products-article favoritos flex-container">
+                    <article class="option-products-article favoritos flex-container">
                          </a>
-                         <a href="https://es.pandora.net/es/pulseras/pulseras-de-cadena/pulsera-moments-cadena-de-serpiente-con-cierre-de-corazon/590719.html"
-                       target="_blank" rel="noopener noreferrer">
-                              <img src="/assets/producto1.jpg"
-                                   alt="pulsera moments">
+                         <a href="https://es.pandora.net/es/anillos/anillos/anillos-llamativos/anillo-corazon-brillante-elevado-rosa/188421C04.html"
+                              target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/2.jpg" alt="pulsera moments">
+                              <i class="bi bi-heart"></i>
                               <div class="cuore">
-                                   <h3>Pulsera oments ,cadena de serpiente con cierre de corazon</h3>
-                              </div>
-                         </a>
-                    </article>
-                    
-                     <article class="opcion-products-article favoritos flex-container">
-                         </a>
-                         <a href="https://es.pandora.net/es/pulseras/pulseras-de-cadena/pulsera-moments-cadena-de-serpiente-con-cierre-de-corazon/590719.html"
-                       target="_blank" rel="noopener noreferrer">
-                              <img src="/assets/producto1.jpg"
-                                   alt="pulsera moments">
-                              <div class="cuore">
-                                   <h3>Pulsera oments ,cadena de serpiente con cierre de corazon</h3>
+                                   <p class="oferta">
+                                        Disponible en cuatro colores
+                                   </p>
+                                   <p>
+                                        Anillo corazon brillante elevado rosa
+                                   </p>
+                                   <p class="precio">99,00 €</p>
                               </div>
                          </a>
                     </article>
 
-                     <article class="opcion-products-article favoritos flex-container">
+                    <article class="option-products-article favoritos flex-container">
                          </a>
-                         <a href="https://es.pandora.net/es/pulseras/pulseras-de-cadena/pulsera-moments-cadena-de-serpiente-con-cierre-de-corazon/590719.html"
-                       target="_blank" rel="noopener noreferrer">
-                              <img src="/assets/producto1.jpg"
-                                   alt="pulsera moments">
+                         <a href="https://es.pandora.net/es/joyas-para-cada-dia/charm-mascota-perro-y-hueso/792254C01.html"
+                              target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/3.jpg" alt="pulsera moments">
+                              <i class="bi bi-heart"></i>
                               <div class="cuore">
-                                   <h3>Pulsera oments ,cadena de serpiente con cierre de corazon</h3>
-                              </div>
-                         </a>
-                    </article>
-                     <article class="opcion-products-article favoritos flex-container">
-                         </a>
-                         <a href="https://es.pandora.net/es/pulseras/pulseras-de-cadena/pulsera-moments-cadena-de-serpiente-con-cierre-de-corazon/590719.html"
-                       target="_blank" rel="noopener noreferrer">
-                              <img src="/assets/producto1.jpg"
-                                   alt="pulsera moments">
-                              <div class="cuore">
-                                   <h3>Pulsera oments ,cadena de serpiente con cierre de corazon</h3>
+                                   <p class="oferta">
+                                        2 CHARMS + 1 pulsera = 99€
+                                   </p>
+                                   <p>Anillo sol y luna nueva</p>
+                                   <p class="precio">99,00 €</p>
                               </div>
                          </a>
                     </article>
 
+                    <article class="option-products-article favoritos flex-container">
+                         </a>
+                         <a href="https://es.pandora.net/es/charms-y-pulseras/charms/cadenas-de-seguridad/cadena-de-seguridad-tres-gemas-azules/791688C01.html"
+                              target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/4.jpg" alt="pulsera moments">
+                              <i class="bi bi-heart"></i>
+                              <div class="cuore">
+                                   <p class="oferta">
+                                        Disponible en cuatro colores
+                                   </p>
+                                   <p> Anillo corazon brillante elevado rosa</p>
+                                   <p class="precio">99,00 €</p>
+                              </div>
+                         </a>
+                    </article>
 
-                                        
+                    <article class="option-products-article favoritos flex-container">
+                         </a>
+                         <a href="https://es.pandora.net/es/charms-y-pulseras/charms/charms/charm-margarita-morada-en-filigrana/798772C02.html"
+                              target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/5.jpg" alt="pulsera moments">
+                              <i class="bi bi-heart"></i>
+                              <div class="cuore">
+                                   <p class="oferta">
+                                        2 CHARMS + 1 pulsera = 99€
+                                   </p>
+                                   <p>Conjunto de joyeria circulos de familia para siempre</p>
+                                   <p class="precio">79,00 €</p>
+                              </div>
+                         </a>
+                    </article>
 
-           
-               
+                    <article class="option-products-article favoritos flex-container">
+                         </a>
+                         <a href="https://es.pandora.net/es/charms-y-pulseras/charms/charms/charm-cristal-de-murano-facetado-amistad/792762C01.html"
+                              target="_blank" rel="noopener noreferrer">
+                              <img src="/assets/6.jpg" alt="pulsera moments">
+                              <i class="bi bi-heart"></i>
+                              <div class="cuore">
+                                   <p class="oferta">
+                                        2 CHARMS + 1 pulsera = 99€
+                                   </p>
+                                   <p>Charm 40 aniversario</p>
+                                   <p class="precio">39,00 €</p>
+                              </div>
+                         </a>
+                    </article>
+
                </div>
           </section>
+           <section class="img-promo-klarna flex-container" id="promocion-klarma-paypal">
+                  <img class="alterna" src="/assets/promo-banner-klarna.gif" alt="klarna">
+               </picture>
+          </section>
      </main>
-     
+
 </body>
+
 </html>
