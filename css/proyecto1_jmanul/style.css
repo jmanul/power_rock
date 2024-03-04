@@ -26,10 +26,25 @@
           sans-serif;
 }
 
+::-webkit-scrollbar {
+     background: var(--gris-transparente);
+     width: 5px;
+     height: 6px;
+     border-radius: 10px
+}
+
+
+::-webkit-scrollbar-thumb {
+     background: var(--blanco);
+     border-radius: 10px;
+     border: 1px solid var(--gris-transparente);
+}
+
 body {
 
      width: 100%;
      height: 100vh;
+
 }
 
 
@@ -311,11 +326,16 @@ header {
      max-width: 170px;
      padding: 40px 0;
 
+}
 
+.option-products a:hover h3 {
 
+     box-shadow: 1px 1px 8px var(--gris-transparente);
+     border-radius: 50px;
 
 
 }
+
 
 .option-products h3 {
      max-width: 200px;
@@ -335,13 +355,6 @@ header {
      border: var(--pink) solid 5px;
 }
 
-.img-promo-klarna img {
-
-     width: 100%;
-     cursor: pointer;
-     padding: 100px 0;
-
-}
 
 /* enlaces linea de productos 2 */
 
@@ -451,6 +464,7 @@ header {
      font-size: 13px;
 }
 
+
 /* enlaces de productos favoritos */
 
 .option-products-favoritos h2 {
@@ -464,7 +478,7 @@ header {
 }
 
 .option-products-favoritos img {
-   
+
      width: 100%;
      /* aspect-ratio: 9/9;
      object-fit: cover; */
@@ -473,7 +487,6 @@ header {
 
 .option-products-article div {
      position: relative;
-border-bottom: 4px solid var(--blanco);
      height: 120px;
 
 }
@@ -486,25 +499,26 @@ border-bottom: 4px solid var(--blanco);
 }
 
 .precio {
-     position:absolute;
+     position: absolute;
      bottom: 0;
      font-size: 16px;
      font-weight: 600;
 }
-.add-article{
+
+.add-article {
 
      width: 100%;
 }
 
-.add-article input{
-   
+.add-article input {
+     cursor: pointer;
      width: 100%;
      border: 1px solid var(--negro);
-     padding:10px; 
-     background-color:var(--blanco);
+     padding: 10px;
+     background-color: var(--blanco);
      font-family: var(--texto);
      font-size: 14px;
-          
+
 }
 
 .option-products-article {
@@ -512,9 +526,6 @@ border-bottom: 4px solid var(--blanco);
      flex: 0 0 auto;
      height: 100%;
      padding: .4em;
-     
-  
-
      max-width: 200px;
      font-size: 13px;
      text-align: start;
@@ -529,12 +540,21 @@ border-bottom: 4px solid var(--blanco);
      right: 17px;
 }
 
- .option-products-article:hover div {
+.option-products-article a {
+     position: relative;
 
-     border-bottom: 4px solid var(--gris-transparente);
+}
+
+.option-products-article a:hover {
+
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 1px 1px 8px transparent;
 
 
-} 
+
+
+}
 
 .favoritos {
 
@@ -542,7 +562,7 @@ border-bottom: 4px solid var(--blanco);
 }
 
 .articles {
-     max-width: 13000px;
+
      overflow: overlay;
      margin: 1em 2em;
      justify-content: start;
@@ -554,7 +574,7 @@ border-bottom: 4px solid var(--blanco);
 
 }
 
-::-webkit-scrollbar {
+.articles::-webkit-scrollbar {
      background: var(--pink);
      width: 5px;
      height: 6px;
@@ -562,18 +582,208 @@ border-bottom: 4px solid var(--blanco);
 }
 
 
-::-webkit-scrollbar-thumb {
+.articles::-webkit-scrollbar-thumb {
      background: var(--blanco);
      border-radius: 10px;
      border: 1px solid var(--pink);
 
+}
 
+
+/* klarna */
+
+.img-promo-klarna {
+     width: 100%;
+     margin: 50px 0;
+}
+
+.img-promo-klarna img {
+     aspect-ratio: 10/1.1;
+     object-fit: cover;
+     max-width: 1220px;
+     width: 100%;
+}
+
+/* campaña pandora inicef */
+.campaña-unicef {
+     width: 100%;
+
+
+}
+
+.container-unicef {
+     align-items: flex-start;
+     justify-content: center;
+     max-width: 1220px;
+     width: 100%;
+     padding: 40px 80px;
+     gap: 50px;
+
+
+}
+
+.img-unicef {
+
+     max-width: 700px;
+     flex: 3;
+}
+
+.img-unicef img {
+
+     width: 100%;
+     object-fit: cover;
+     aspect-ratio: 5/4;
+}
+
+.pandora-mini {
+
+     width: 65px;
+
+}
+
+.pandora-mini img {
+
+     width: 100%;
+}
+
+.encabezado-unicef {
+
+     justify-content: left;
+     gap: 5px;
+     padding-bottom: 20px;
+     font-size: 8px;
+}
+
+.texto-unicef {
+     flex-direction: column;
+     text-align: start;
+     align-items: start;
+
+     flex: 1;
+}
+
+.texto-unicef h2 {
+
+     font-family: var(--titulo);
+     font-size: 40px;
+     font-weight: 800;
+}
+
+.texto-unicef p {
+
+     font-family: var(--texto);
+     font-size: 15px;
+     font-weight: 500;
+     padding-bottom: 30px;
+}
+
+.texto-unicef input {
+
+     background-color: var(--negro);
+     border: 0;
+     color: var(--blanco);
+     padding: 12px 35px;
+     font-family: var(--texto);
+     font-size: 12px;
+
+}
+
+/* discover */
+
+.discover {
+     
+     max-width: fit-content;
+     width: 100%;
+     min-height: fit-content;
+     padding-top: 70px;
+
+     padding-bottom: 100px;
+}
+
+.container-discover {
+     position: relative;
+     max-width: 1220px;
+     width: 100%;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 70px 80px;
+
+}
+
+.discover h2 {
+     position: absolute;
+     top: 40px;
+
+     font-family: var(--titulo);
+     font-size: 65px;
+     font-weight: 600;
+
+}
+
+.discover-pandora-logo {
+
+     flex-direction: column;
+     align-items: flex-start;
+     max-width: 900px;
+     min-width: 150px;
+
+}
+
+.discover-pandora-logo img {
+
+     width: 100%;
+     object-fit: cover;
+     aspect-ratio: 10/2.5;
+}
+
+.discover-enlaces {
+     position: relative;
+     max-width: fit-content;
+     width: 100%;
+     gap: 15px;
+     align-items: flex-start;
+}
+
+.discover-enlaces a {
+     position: relative;
+     text-align: start;
+}
+
+.discover-enlaces h3 {
+
+     font-family: var(--titulo);
+     font-size: 18px;
+     font-weight: 800;
+     padding: 10px 0;
+}
+
+.discover-text {
+     position: relative;
+     min-height: 90px;
+}
+
+.discover-enlaces p {
+     position: absolute;
+     bottom: 0;
+     width: fit-content;
+     font-size: 12px;
+     padding-bottom: 8px;
+     border-bottom: 2px solid var(--negro);
 }
 
 
 
+.img-discover {
 
+     max-width: 300px;
+     min-width: 180px;
+}
 
+.img-discover img {
+     width: 100%;
+          object-fit: cover;
+          aspect-ratio: 3/4;
+}
 
 
 
@@ -583,11 +793,22 @@ border-bottom: 4px solid var(--blanco);
 
           justify-content: center;
 
-
-
-
      }
+
+
 }
+
+@media (min-width: 1025px) {
+
+     .discover h2 {
+          top: -10px;
+          font-size: 85px;
+     }
+
+
+}
+
+
 
 @media (max-width: 1025px) {
 
@@ -694,6 +915,8 @@ border-bottom: 4px solid var(--blanco);
 
      }
 
+
+
 }
 
 @media (max-width: 1250px) {
@@ -709,6 +932,8 @@ border-bottom: 4px solid var(--blanco);
 
           padding-left: 15px;
      }
+
+
 }
 
 @media (max-width: 920px) {
@@ -736,6 +961,41 @@ border-bottom: 4px solid var(--blanco);
           max-width: 240px;
 
      }
+
+     .discover-enlaces {
+          height: fit-content;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          justify-items: center;
+          align-items: center;
+          grid-auto-rows: 1fr;
+          grid-template-columns: repeat(2, 1fr);
+          
+
+     }
+
+     .discover-descubre {
+          position: absolute;
+          right: 0;
+          top: 150px;
+     }
+
+     .discover-grava {
+
+          grid-column: 1;
+
+     } 
+     .discover-exitos {
+
+          position: absolute;
+          right: 0;
+          bottom: -150px;
+
+         
+     }
+
+
 
 }
 
@@ -812,6 +1072,33 @@ border-bottom: 4px solid var(--blanco);
      }
 
 
+
+     .container-unicef {
+
+          flex-direction: column;
+          padding-left: 35px;
+          padding-right: 35px;
+     }
+
+     .texto-unicef h2 {
+
+          font-size: 22px;
+     }
+
+     .container-discover {
+
+          padding: 70px 30px;
+
+     }
+
+     .discover h2 {
+
+
+          font-size: 50px;
+
+     }
+
+
 }
 
 
@@ -845,6 +1132,13 @@ border-bottom: 4px solid var(--blanco);
      .option-products-article {
 
           max-width: 160px;
+
+     }
+
+     .discover h2 {
+
+
+          font-size: 35px;
 
      }
 
