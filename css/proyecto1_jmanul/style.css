@@ -14,8 +14,9 @@
      --negro: #181818;
      --gris: #f7f2f2;
      --gris-oscuro: #918989;
+     --gris-mas-oscuro: rgb(104, 103, 103);
      --gris-transparente: #80808067;
-
+     --gris-claro: rgb(238, 238, 238);
      --pink: rgb(248, 201, 209);
      --gris-texto: #f2f3eb;
      --titulo: "Roboto",
@@ -24,6 +25,7 @@
      --texto-deco: "Figtree", sans-serif;
      --texto-deco-xs: "Varela Round",
           sans-serif;
+
 }
 
 ::-webkit-scrollbar {
@@ -106,15 +108,13 @@ header {
      width: 100%;
      background-color: var(--pink);
      z-index: 10;
-     /* animation: header linear both;
-     animation-timeline: scroll(root block);
-     animation-range: 0 1000px; */
 
 }
 
 .header-superior {
-     position: absolute;
+     position: sticky;
      top: 30px;
+     z-index: 11;
      background-color: var(--blanco);
      width: 100%;
      height: 70px;
@@ -241,41 +241,74 @@ header {
 /* imagen promocional  */
 
 .promocion {
+     padding-top: 150px;
+     width: 100%;
 
-     padding-top: 145px;
 
 }
 
-.img-promo1,
-.img-promo3 {
-
+.container-promo {
+     overflow-x: hidden;
+     justify-content: flex-start;
+     width: 100%;
      max-width: 1220px;
+
+
 }
 
 
-.img-promo1 img {
-     width: 100%;
+.container-promo div {
+
+     min-width: 100%;
+
+
+
+}
+
+.container-promo img {
      cursor: pointer;
-}
-
-.img-promo2 img {
-     display: none;
      width: 100%;
+     animation: move 20s ease-in-out infinite;
+     animation-direction: alternate;
 }
 
-.img-promo1:hover .img-promo2 img {
 
-     display: flex;
+@keyframes move {
+
+     0% {
+          margin-left: 0;
+     }
+
+     20% {
+          margin-left: 0;
+     }
+
+     35% {
+          margin-left: -200%;
+     }
+
+     65% {
+          margin-left: -200%;
+     }
+
+     80% {
+          margin-left: 0;
+     }
+
+     100% {
+          margin-left: 0;
+     }
+
 
 }
 
-.img-promo1:hover img {
+.alterna-920px {
 
      display: none;
-
 }
 
-/* enlaces a lineas de productos */
+
+/* scroll animation */
 
 @keyframes jump {
 
@@ -285,10 +318,36 @@ header {
      }
 
      to {
-          translate: 0;
 
+          translate: 0
      }
 }
+
+@keyframes rejump {
+
+     from {
+          translate: 0 -110px;
+     }
+
+     to {
+
+          translate: 0;
+     }
+}
+
+/* 
+@keyframes ups {
+
+     from {
+
+          height: 156px;
+     }
+
+     to {
+
+          height: 0;
+     }
+} */
 
 
 
@@ -317,6 +376,7 @@ header {
      max-height: 140px;
      max-width: 170px;
      padding: 40px 0;
+     transition: .5s ease-in;
 
 
 
@@ -342,6 +402,7 @@ header {
      font-size: 12px;
      font-weight: 400;
      font-family: var(--texto-deco);
+     transition: .5s;
 
 }
 
@@ -353,6 +414,13 @@ header {
      width: 100%;
      cursor: pointer;
      border: var(--pink) solid 5px;
+}
+
+.img-promo3 {
+
+     width: 100%;
+     max-width: 1220px;
+
 }
 
 
@@ -377,6 +445,7 @@ header {
      animation-timeline: view();
      animation-range: entry 0 cover 30%;
 
+
 }
 
 .enlaces-line {
@@ -398,8 +467,6 @@ header {
      animation: jump linear both;
      animation-timeline: view();
      animation-range: entry 0 cover 30%;
-
-
 
 }
 
@@ -453,7 +520,7 @@ header {
 
 }
 
-.enlaces-line div {
+.enlaces-line .title-line {
      position: absolute;
      bottom: 10px;
      background-color: var(--blanco);
@@ -461,6 +528,12 @@ header {
      height: 70px;
      margin-left: 10px;
      padding-top: 10px;
+
+     animation: rejump ease-in-out both;
+     animation-timeline: view();
+     animation-range: entry 10% cover 35%;
+     /* animation-duration: 1.3s; */
+
 
 }
 
@@ -477,6 +550,25 @@ header {
 
 
 /* enlaces de productos favoritos */
+.option-products-favoritos {
+
+     width: 100%;
+     flex-direction: column;
+
+}
+
+.articles {
+     width: 90%;
+     max-width: 1250px;
+     overflow-x: overlay;
+     margin: 1em 2em;
+     justify-content: flex-start;
+     font-weight: 600;
+     font-family: var(--texto);
+     gap: .5em;
+     padding-bottom: 100px 50px 0 50px;
+
+}
 
 .option-products-favoritos h2 {
 
@@ -491,8 +583,15 @@ header {
 .option-products-favoritos img {
 
      width: 100%;
-     /* aspect-ratio: 9/9;
-     object-fit: cover; */
+     transition: .3s ease-in;
+}
+
+.option-products-article a:hover img {
+
+     scale: 1.05;
+     box-shadow: 0px 0px 10px 0px rgb(218, 211, 212);
+     border: solid 1px var(--pink);
+     border-radius: 10px;
 
 }
 
@@ -529,6 +628,7 @@ header {
      background-color: var(--blanco);
      font-family: var(--texto);
      font-size: 14px;
+     transition: .5s;
 
 }
 
@@ -562,52 +662,11 @@ header {
 
 }
 
-.option-products-article a:hover {
-
-     padding: 10px;
-     border-radius: 10px;
-     box-shadow: 1px 1px 8px transparent;
-
-
-
-
-}
 
 .favoritos {
 
      flex-direction: column;
 }
-
-.articles {
-
-     overflow: overlay;
-     margin: 1em 2em;
-     justify-content: start;
-     font-weight: 600;
-     font-family: var(--texto);
-     gap: .5em;
-     padding-bottom: 100px;
-
-
-
-
-}
-
-.articles::-webkit-scrollbar {
-     background: var(--pink);
-     width: 5px;
-     height: 6px;
-     border-radius: 10px
-}
-
-
-.articles::-webkit-scrollbar-thumb {
-     background: var(--blanco);
-     border-radius: 10px;
-     border: 1px solid var(--pink);
-
-}
-
 
 /* klarna */
 
@@ -624,7 +683,7 @@ header {
      width: 100%;
 }
 
-/* campaña pandora inicef */
+/* campaña pandora unicef */
 .campaña-unicef {
      width: 100%;
 
@@ -688,7 +747,7 @@ header {
 
      animation: jump linear both;
      animation-timeline: view();
-     animation-range: entry 0 cover 30%;
+     animation-range: entry 0 cover 40%;
 }
 
 .texto-unicef h2 {
@@ -707,7 +766,7 @@ header {
 }
 
 .texto-unicef input {
-
+     cursor: pointer;
      background-color: var(--negro);
      border: 0;
      color: var(--blanco);
@@ -719,12 +778,13 @@ header {
 
 /* discover */
 
+
 .discover {
      width: 100%;
      min-height: fit-content;
      padding-top: 70px;
 
-     padding-bottom: 100px;
+
 }
 
 .container-discover {
@@ -821,7 +881,7 @@ header {
 .img-discover {
 
      max-width: 300px;
-     min-width: 180px;
+     min-width: 160px;
 }
 
 .img-discover img {
@@ -830,24 +890,356 @@ header {
      aspect-ratio: 3/4;
 }
 
+/* condiciones */
 
 
-@media (min-width: 1300px) {
 
-     .articles {
+.condiciones {
+     position: relative;
+     height: auto;
 
-          justify-content: center;
+     flex-direction: column;
+}
 
-     }
+.condiciones .slaider {
 
+     max-width: 1250px;
+     width: 90%;
+     flex-direction: column;
 
 }
 
+.condiciones .slaider .content {
+
+     width: 100%;
+     padding: 50px 0 40px 0;
+     overflow-x: hidden;
+     justify-content: flex-start;
+
+}
+
+.condiciones .slaider ul {
+
+     gap: 5px;
+}
+
+
+.condiciones .slaider ul>li>a div {
+
+     background-color: rgb(43, 42, 42);
+     width: 280px;
+     min-width: fit-content;
+     color: var(--blanco);
+     padding: 30px;
+     height: 200px;
+     flex-direction: column;
+     gap: 10px;
+     justify-content: flex-start;
+     transition: 1s ease-in-out;
+
+}
+
+.condiciones i {
+
+     font-size: 3rem;
+}
+
+.condiciones p {
+
+     font-family: var(--texto);
+     font-size: 11px;
+     color: var(--gris-oscuro);
+}
+
+.condiciones h4 {
+
+     font-family: var(--titulo);
+     font-size: 21px;
+     font-weight: 400;
+}
+
+.condiciones .slaider input {
+
+     position: absolute;
+     z-index: -1;
+     display: none;
+}
+
+.condiciones .buttons {
+
+     position: absolute;
+     z-index: 1;
+     width: fit-content;
+     bottom: 0;
+     gap: 15px;
+}
+
+.condiciones .buttons label {
+
+     width: .5rem;
+     height: .5rem;
+     border-radius: 50%;
+     background-color: var(--negro);
+     opacity: 50%;
+     cursor: pointer;
+     transition: 1.3s ease-in-out;
+}
+
+.condiciones .buttons label:hover {
+
+     opacity: 90%;
+}
+
+.slaider input:nth-child(1):checked~.buttons label:nth-child(1),
+.slaider input:nth-child(2):checked~.buttons label:nth-child(2),
+.slaider input:nth-child(3):checked~.buttons label:nth-child(3),
+.slaider input:nth-child(4):checked~.buttons label:nth-child(4),
+.slaider input:nth-child(5):checked~.buttons label:nth-child(5) {
+
+     opacity: 1;
+}
+
+.slaider input:nth-child():checked~.content div {
+
+     translate: 0 0;
+}
+
+.slaider input:nth-child(2):checked~.content div {
+
+     translate: -280px 0;
+}
+
+.slaider input:nth-child(3):checked~.content div {
+
+     translate: -560px 0;
+}
+
+.slaider input:nth-child(4):checked~.content div {
+
+     translate: -840px 0;
+}
+
+.slaider input:nth-child(5):checked~.content div {
+
+     translate: -1120px 0;
+}
+
+
+/* suscripcion footer */
+
+footer {
+     background-color: var(--gris);
+     flex-direction: column;
+     font-size: 13px;
+     font-family: var(--texto);
+}
+
+.suscripcion {
+     gap: 80px;
+     padding: 4em 0;
+     width: 80%;
+     max-width: 1220px;
+     border-bottom: 1px solid var(--gris-transparente);
+
+}
+
+.suscripcion .text-suscripcion {
+
+     text-align: start;
+}
+
+.suscripcion h2 {
+
+     font-family: var(--titulo);
+     font-size: 19px;
+     font-weight: 400;
+     padding-bottom: 8px;
+
+}
+
+
+
+
+.suscribete button {
+     cursor: pointer;
+     color: var(--blanco);
+     background-color: var(--gris-mas-oscuro);
+     font-size: 13px;
+     font-weight: 500;
+     letter-spacing: .1em;
+     padding: 10px 20px;
+     border: solid 1px var(--gris-mas-oscuro);
+     height: 45px;
+
+}
+
+.suscribete input {
+     background-color: transparent;
+     text-overflow: ellipsis;
+     max-width: 200px;
+     padding: 12px 20px;
+     border: solid 1.5px var(--negro);
+     border-right-color: transparent;
+     height: 45px;
+
+}
+
+.suscripcion form input::placeholder {
+
+     color: var(--gris-oscuro);
+     font-weight: 400;
+
+}
+
+.menu-footer {
+
+     padding: 4em 0;
+     width: 80%;
+     max-width: 1220px;
+     border-bottom: 1px solid var(--gris-transparente);
+}
+
+.menu-footer>ul {
+
+     gap: 40px;
+     text-align: start;
+}
+
+.menu-footer h4 {
+     cursor: pointer;
+     letter-spacing: .1em;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: var(--titulo);
+     padding-bottom: 16px;
+}
+
+.desplegable li {
+    
+     padding-bottom: 15px;
+     font-size: 12px;
+     font-weight: 500;
+
+}
+
+.desplegable a {
+
+     color: var(--gris-mas-oscuro);
+
+}
+
+.menu-footer span {
+
+     font-size: 21px;
+     display: none;
+
+}
+
+.pie-footer {
+     
+     padding: 20px;
+     gap: 50px
+
+}
+
+.rrss {
+
+     gap: 15px;
+     opacity: 80%;
+     
+}
+
+.pasttri-logo {
+
+     width: 20px;
+}
+.pasttri-logo img{
+
+     width: 100%;
+}
+
+
+
+
+
+
+
 @media (min-width: 1025px) {
+
+
+     /* header {
+
+          animation: ups linear both;
+          animation-timeline: scroll(root block);
+          animation-range: 150vh 200vh;
+
+
+     } */
 
      .discover h2 {
           top: -10px;
           font-size: 85px;
+     }
+
+
+     .condiciones .slaider ul {
+
+          gap: 0;
+     }
+
+     .condiciones .slaider ul>li>a div {
+
+          border: 1px solid var(--gris-transparente);
+
+     }
+
+     .condiciones .buttons label {
+
+          display: none;
+     }
+
+     .slaider .content ul {
+
+          animation: move-carrusel 20s ease-in-out infinite;
+          animation-direction: alternate;
+          animation-play-state: running;
+
+          &:hover {
+
+               animation-play-state: paused;
+          }
+
+
+     }
+
+
+     @keyframes move-carrusel {
+
+          0% {
+               margin-left: 0;
+          }
+
+          20% {
+               margin-left: 0;
+          }
+
+          35% {
+               translate: -280px 0;
+          }
+
+          65% {
+               translate: -280px 0;
+          }
+
+          80% {
+               margin-left: 0;
+          }
+
+          100% {
+               margin-left: 0;
+          }
+
+
      }
 
 
@@ -967,6 +1359,53 @@ header {
 
      }
 
+     .condiciones ul::-webkit-scrollbar,
+     .condiciones ul::-webkit-scrollbar {
+          display: none;
+
+     }
+
+     .suscripcion {
+          gap: 80px;
+          padding: 3em 0 2em 0;
+
+
+     }
+
+     .menu-footer .desplegable {
+
+          display: none;
+     }
+
+     .menu-footer ul {
+
+          flex-direction: column;
+          gap: 1px;
+
+     }
+
+     .menu-footer li {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          border-bottom: 1px solid var(--gris-transparente);
+          padding: 13px 0;
+     }
+
+
+    .menu-footer span {
+
+     display: inline-block;
+
+    }
+
+     .menu-footer {
+
+          padding: 0;
+          border-bottom: none;
+     }
+
+
 
 
 }
@@ -986,20 +1425,26 @@ header {
      }
 
 
+     .suscripcion,
+     .menu-footer {
+
+          width: 95%;
+     }
+
+
 }
 
 @media (max-width: 920px) {
 
-     .img-promo1 {
+     .alternaMin920px {
 
-          min-width: 100%;
+          display: none;
 
      }
 
-     .img-promo1:hover .img-promo2 {
+     .alterna-920px {
 
-          min-width: 100%;
-
+          display: inline-block;
      }
 
      .option-products a {
@@ -1046,6 +1491,11 @@ header {
           bottom: -150px;
 
 
+     }
+
+     .condiciones {
+
+          margin-top: 100px;
      }
 
 
@@ -1193,6 +1643,46 @@ header {
 
           font-size: 35px;
 
+     }
+
+     .discover-enlaces {
+
+          width: auto;
+
+     }
+          .suscripcion {
+
+               justify-content: flex-start;
+          }
+          .suscripcion h2 {
+     
+               font-size: 17px;    
+     
+          }
+     
+     
+     
+     
+          .suscribete button {
+     
+               font-size: 11px;
+               padding: 8px 16px;
+               height: 40px;
+          }
+     
+          .suscribete input {
+               
+               width: 170px;
+               padding: 8px 16px;
+               height: 40px;
+     
+          }
+
+     .pie-footer, .suscripcion {
+
+          flex-direction: column;
+          gap: 15px;
+          width: auto;
      }
 
 }

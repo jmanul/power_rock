@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="assets/favicon-pandora.ico" type="image/x-icon">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
      <title>Proyecto 1 jmanul</title>
 </head>
+
 
 
 <body>
@@ -50,6 +52,8 @@
                </div>
           </div>
 
+          <!-- nav-bar inferior desktop -->
+
           <nav class="header-inferior flex-container">
                <ul class="option-header-inferior flex-container">
                     <li class="flex-container"><a href="#">NOVEDADES<i class="bi bi-chevron-down"></i><i
@@ -74,24 +78,36 @@
      </header>
 
      <main>
-          <!-- espacio par imagenes promocionales -->
+          <!-- espacio par imagenes promocionales de encabezado-->
 
-          <section class="promocion flex-container" id="promocion-1">
+          <section class="promocion flex-container" id="promocion-1" >
+            <div class="container-promo flex-container">
+         
+                <div class="alternaMin920px" >
+                    <img src="/assets/hero-sisters-desktop.jpg" alt="promocion"> 
+           
+                    </div> 
+                  <div class="alterna-920px">
+                           <img  src="/assets/hero-sisters-mobile.jpg" alt="promocion">
+                </div>  
 
-               <picture class="img-promo1 flex-container">
-                    <source media="(min-width:920px)" srcset="/assets/hero-sisters-desktop.jpg">
-                    <img class="alterna" src="/assets/hero-sisters-mobile.jpg" alt="promocion">
-                    <picture class="img-promo2 flex-container">
-                         <source media="(min-width:920px)" srcset="/assets/microsoftteams-image-3-1-.jpg">
-                         <img class="alterna" src="assets/hero-sisters-hand-mobile.jpg" alt="promocion">
+                <div class="alternaMin920px">
+                         <img src="/assets/microsoftteams-image-3-1-.jpg" alt="promocion">
 
-                    </picture>
-               </picture>
+                     </div>  
+
+                      <div class="alterna-920px" >
+                            <img src="assets/hero-sisters-hand-mobile.jpg" alt="promocion">
+                     </div> 
+             
+            </div>
 
 
           </section>
 
           <!-- enlaces a distintas lineas de productos -->
+
+   
 
           <section class="option-products flex-container" id="option-products">
 
@@ -122,13 +138,18 @@
                     </a>
                </div>
           </section>
-          <section class="promocion img-promocion-3 flex-container" id="promocion-2">
+           
+          <!-- banner promocional -->
 
-               <picture class="img-promo3 flex-container">
+          <section class="promocion img-promocion-3 flex-container" id="promocion-2">
+                   <picture class="img-promo3 flex-container">
                     <source media="(min-width:920px)" srcset="/assets/01-promomodule-desktop-3200x336-es.jpg">
                     <img class="alterna" src="/assets/02-promomodule-mobile-3962x321-es.jpg" alt="promocion">
                </picture>
           </section>
+          
+          <!-- otros enlaces de lineas de productos  -->
+
           <section class="option-products-2  flex-container" id="option-products-2">
                <h2 class="title">Para cada momento especial</h2>
 
@@ -180,7 +201,7 @@
 
           <!-- productos favoritos -->
 
-          <section class="option-products-favoritos " id="favoritos">
+          <section class="option-products-favoritos flex-container" id="favoritos">
                <div class="option-products-favoritos-titulo">
                     <h2 class="products flex-container">Nuestros favoritos</h2>
 
@@ -357,16 +378,139 @@
               </section>
 
               <!-- condiciones -->
+   
+              <section class="condiciones flex-container">
+              <div class="slaider flex-container">
+
+               <input type="radio" name="slider" id="sliderOne" checked>
+               <input type="radio" name="slider" id="sliderTwo" >
+               <input type="radio" name="slider" id="sliderThree" >
+               <input type="radio" name="slider" id="sliderFour" >
+               <input type="radio" name="slider" id="sliderFive" >
+
+               <div class="buttons flex-container">
+                    <label for="sliderOne"></label>
+                    <label for="sliderTwo"></label>
+                    <label for="sliderThree"></label>
+                    <label for="sliderFour"></label>
+                    <label for="sliderFive"></label>
+               </div>
+
+                <div class="content flex-container">
+                     <ul class="flex-container">
+                   
+                         <li id="section-1" >
+                               <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-credit-card-2-back-fill"></i>
+                                   <p>Disponible con klarna o Pay Pal</p>
+                                   <h4>Pago a Plazos</h4>
+
+                              </div>
+                              </a>
+                         </li>
+                 
+                         <li id="section-2">
+                                  <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-truck"></i>
+                                   <p>En compras superiores a 75€</p>
+                                   <h4>Envio Estandar Gratis</h4>
+
+                              </div>
+                              </a>
+             
+                         <li id="section-3">
+                              <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-arrow-counterclockwise"></i>
+                                   <p>Dentrpo de los 60 dias</p>
+                                   <h4>Devolucion Gratuita</h4>
+
+                              </div>
+                              </a>
+                         </li>
+                      
+                         <li id="section-4" >
+                              <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-emoji-heart-eyes"></i>
+                                   <p>Ventajas exclusivas</p>
+                                   <h4>Pandora Club</h4>
+
+                              </div>
+                              </a>
+                         </li>
+     
+                         <li section-5>
+                              <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-star"></i>
+                                   <p>Descuento exclusivo online</p>
+                                   <h4>-10% pra estudiantes</h4>
+
+                              </div>
+                              </a>
+                         </li> 
+                          <li id="section-1" >
+                               <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-credit-card-2-back-fill"></i>
+                                   <p>Disponible con klarna o Pay Pal</p>
+                                   <h4>Pago a Plazos</h4>
+
+                              </div>
+                              </a>
+                         </li>
+                 
+                         <li id="section-2">
+                                  <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-truck"></i>
+                                   <p>En compras superiores a 75€</p>
+                                   <h4>Envio Estandar Gratis</h4>
+
+                              </div>
+                              </a>
+             
+                         <li id="section-3">
+                              <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-arrow-counterclockwise"></i>
+                                   <p>Dentrpo de los 60 dias</p>
+                                   <h4>Devolucion Gratuita</h4>
+
+                              </div>
+                              </a>
+                         </li>
+                      
+                         <li id="section-4" >
+                              <a href="#">
+                              <div class="flex-container">
+                                   <i class="bi bi-emoji-heart-eyes"></i>
+                                   <p>Ventajas exclusivas</p>
+                                   <h4>Pandora Club</h4>
+
+                              </div>
+                              </a>
+                         </li>
+      
+                         </ul>
+                </div>
+              
+              </div>
+       
+              </section>
 
 
               <!-- recientes -->
 
-                <section class="option-products-favoritos " id="favoritos">
+                <section class="option-products-favoritos flex-container " id="recientes">
                <div class="option-products-favoritos-titulo">
                     <h2 class="products flex-container">Vistos recientemente</h2>
 
                </div>
-               <div class="articles flex-container">
+               <div class="articles recientes flex-container">
                
                     <article class="option-products-article favoritos flex-container">
                          </a>
@@ -434,6 +578,142 @@
 
 
      </main>
+
+       
+          <!-- espacio para suscripcion a ofertas-->
+
+     <footer class="footer flex-container">      
+
+
+          <section class="suscripcion flex-container" id="suscripcion">
+
+        <div class="text-suscripcion">
+             <h2> ¡Recibe novedades y ofertas de Pandora!</h2>
+           <p>Suscríbete a nuestra newsletter y sé el primero en enterarte.</p>
+        </div>
+
+<form action="#" method="suscribete" class="suscribete flex-container">
+   
+     <input type="email" name="registrate" id="registrate" placeholder="Dirección de correo electrónico">
+     <button type="submit" class="suscrito">REGISTRATE</button>
+
+</form>
+          </section>
+      
+
+
+     <!-- menu footer  -->
+
+ 
+          <section class="menu-footer " id="menu-footer">
+          
+               <ul class="flex-container">
+                   <li>
+                      <h4>Explorar</h4> <span>+</span>
+                      
+                     <div class="desplegable" id="explorar">
+                      <ul>
+                         <li><a href="#">Charms y pulseras</a></li>  <li><a href="#">Joyas</a></li>  
+                         <li><a href="#">Colecciones</a></li>  
+                         <li><a href="#">Regalos</a></li>  
+                         <li><a href="#">Descubrir</a></li>  
+                         <li><a href="#">Guia de Tallas de Pulseras</a></li>  
+                         <li><a href="#">Guia de Tallas de Anillos</a></li>  
+                         <li><a href="#">Guia de Tallas de Collares</a></li>  
+                         <li><a href="#">Mapa del sitio</a></li>
+                      </ul>
+
+                    </div>
+                   </li>    <li>
+                      <h4>Servicio de Atención al Criente</h4><span>+</span>
+                     <div class="desplegable" id="SACliente">
+                      <ul>
+                         <li><a href="#">Charms y pulseras</a></li>  <li><a href="#">Joyas</a></li>  
+                         <li><a href="#">Colecciones</a></li>  
+                         <li><a href="#">Regalos</a></li>  
+                         <li><a href="#">Descubrir</a></li>  
+                         <li><a href="#">Guia de Tallas de Pulseras</a></li>  
+                         <li><a href="#">Guia de Tallas de Anillos</a></li>  
+                         <li><a href="#">Guia de Tallas de Collares</a></li>  
+                         <li><a href="#">Mapa del sitio</a></li>
+                      </ul>
+
+                    </div>
+                   </li>    <li>
+                      <h4>Gestionar</h4><span>+</span>
+                     <div class="desplegable" id="gestionar">
+                      <ul>
+                         <li><a href="#">Charms y pulseras</a></li>  <li><a href="#">Joyas</a></li>  
+                         <li><a href="#">Colecciones</a></li>  
+                         <li><a href="#">Regalos</a></li>  
+                         <li><a href="#">Descubrir</a></li>  
+                         <li><a href="#">Guia de Tallas de Pulseras</a></li>  
+                         <li><a href="#">Guia de Tallas de Anillos</a></li>  
+                         <li><a href="#">Guia de Tallas de Collares</a></li>  
+                         <li><a href="#">Mapa del sitio</a></li>
+                      </ul>
+
+                    </div>
+                   </li>    <li>
+                      <h4>Aviso Legal</h4><span>+</span>
+                     <div class="desplegable" id="avisoLegal">
+                      <ul>
+                         <li><a href="#">Charms y pulseras</a></li>  <li><a href="#">Joyas</a></li>  
+                         <li><a href="#">Colecciones</a></li>  
+                         <li><a href="#">Regalos</a></li>  
+                         <li><a href="#">Descubrir</a></li>  
+                         <li><a href="#">Guia de Tallas de Pulseras</a></li>  
+                         <li><a href="#">Guia de Tallas de Anillos</a></li>  
+                         <li><a href="#">Guia de Tallas de Collares</a></li>  
+                         <li><a href="#">Mapa del sitio</a></li>
+                      </ul>
+
+                    </div>
+                   </li>    <li>
+                      <h4>Sobre Pandora</h4><span>+</span>
+                     <div class="desplegable" id="sobrePandora">
+                      <ul>
+                         <li><a href="#">Charms y pulseras</a></li>  <li><a href="#">Joyas</a></li>  
+                         <li><a href="#">Colecciones</a></li>  
+                         <li><a href="#">Regalos</a></li>  
+                         <li><a href="#">Descubrir</a></li>  
+                         <li><a href="#">Guia de Tallas de Pulseras</a></li>  
+                         <li><a href="#">Guia de Tallas de Anillos</a></li>  
+                         <li><a href="#">Guia de Tallas de Collares</a></li>  
+                         <li><a href="#">Mapa del sitio</a></li>
+                      </ul>
+
+                    </div>
+                   </li>
+               </ul>
+          </section>
+        
+       <!-- pie de footer -->
+
+
+
+          <section class="pie-footer flex-container" id="pie-footer">
+   <div class="making flex-container ">Hecho por José Manuel Sánchez <span class="flex-container"><div class="pasttri-logo"><img src="assets/pasttri.webp" alt="logo pasttri"></div></span></div>
+        
+
+               <ul class="rrss flex-container">
+                    <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#"><i class="bi bi-pinterest"></i></a></li>
+                   
+               </ul>
+          </section>
+
+       
+
+
+
+
+     </footer>
+
 
 </body>
 
