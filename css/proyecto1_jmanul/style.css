@@ -430,6 +430,7 @@ header {
      text-align: left;
      padding: 100px 50px 50px 50px;
      width: 100%;
+
      gap: 50px;
      align-items: start;
 
@@ -456,6 +457,8 @@ header {
      grid-template-columns: repeat(3, 1fr);
 
 
+
+
 }
 
 .enlaces-line a {
@@ -480,10 +483,11 @@ header {
      background-size: 200px;
 
 
+
 }
 
 .game-tronos-line {
-     background-image: url(/assets/q124-b-pdp-model-styled-02-extended.jpg);
+     background-image: url(https://res.cloudinary.com/dn6utw1rl/image/upload/v1710356977/q124-b-pdp-model-styled-02-extended_dgnelz.webp);
      height: 260px;
      position: absolute;
      bottom: -30px;
@@ -492,29 +496,29 @@ header {
 }
 
 .novedades-line {
-     background-image: url(/assets/q124-b-pdp-model-styled-14-high-ext-megaspotter.jpg);
+     background-image: url(https://res.cloudinary.com/dn6utw1rl/image/upload/v1710357026/mundo-pandora_d97iye.webp);
      height: 200px;
 }
 
 .joyas-line {
-     background-image: url(/assets/q224-pre-mothersday-product-01-extended-02-1-1-.jpg);
+     background-image: url(https://res.cloudinary.com/dn6utw1rl/image/upload/v1710356911/joyas2_kxptc5.webp);
      height: 200px;
 }
 
 .charms-line {
-     background-image: url(/assets/2024-brand-product-02-extended-megaspotter.jpg);
+     background-image: url(https://res.cloudinary.com/dn6utw1rl/image/upload/v1710357021/2024-brand-product-02-extended-megaspotter_bwtmqz.webp);
      height: 260px;
      bottom: -30px;
 
 }
 
 .Marvel-line {
-     background-image: url(/assets/q124-b-pdp-product-styled-01-rgb-extended.jpg);
+     background-image: url(https://res.cloudinary.com/dn6utw1rl/image/upload/v1710357030/q124-b-pdp-product-styled-01-rgb-extended_fynhnt.webp);
      height: 200px;
 }
 
 .unicef {
-     background-image: url(/assets/videoframe_12269.png);
+     background-image: url(https://res.cloudinary.com/dn6utw1rl/image/upload/v1710356913/videoframe_12269_ie7mxz.webp);
      height: 260px;
      bottom: 30px;
 
@@ -532,7 +536,7 @@ header {
      animation: rejump ease-in-out both;
      animation-timeline: view();
      animation-range: entry 10% cover 35%;
-     /* animation-duration: 1.3s; */
+   
 
 
 }
@@ -566,7 +570,7 @@ header {
      font-weight: 600;
      font-family: var(--texto);
      gap: .5em;
-     padding-bottom: 100px 50px 0 50px;
+     padding-bottom: 20px;
 
 }
 
@@ -1044,7 +1048,6 @@ footer {
 }
 
 .suscripcion .text-suscripcion {
-
      text-align: start;
 }
 
@@ -1115,7 +1118,7 @@ footer {
 }
 
 .desplegable li {
-    
+
      padding-bottom: 15px;
      font-size: 12px;
      font-weight: 500;
@@ -1136,26 +1139,31 @@ footer {
 }
 
 .pie-footer {
-     
+
      padding: 20px;
      gap: 50px
-
 }
 
 .rrss {
 
      gap: 15px;
      opacity: 80%;
-     
+
 }
 
-.pasttri-logo {
-
-     width: 20px;
+.pasttri-logo{
+  
+     width: 30px;
 }
-.pasttri-logo img{
+
+.pasttri-logo img {
 
      width: 100%;
+}
+
+.making strong {
+
+     opacity: 60%;
 }
 
 
@@ -1393,11 +1401,11 @@ footer {
      }
 
 
-    .menu-footer span {
+     .menu-footer span {
 
-     display: inline-block;
+          display: inline-block;
 
-    }
+     }
 
      .menu-footer {
 
@@ -1602,6 +1610,78 @@ footer {
      }
 
 
+     .suscripcion h2 {
+
+          font-size: 17px;
+
+     }
+
+     .suscripcion .text-suscripcion {
+
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+
+     }
+
+     .menu-footer {
+
+          width: 80%;
+     }
+
+
+
+
+     .suscribete button {
+
+          font-size: 11px;
+          padding: 8px 16px;
+          height: 40px;
+     }
+
+     .suscribete input {
+
+          width: 170px;
+          padding: 8px 16px;
+          height: 40px;
+
+     }
+
+     .suscripcion {
+
+          flex-direction: column;
+          gap: 15px;
+          width: 80%;
+          align-items: flex-start;
+     }
+
+     .pie-footer {
+       
+          flex-direction: column-reverse;
+          gap: 15px;
+          
+
+     }
+
+     .pie-footer i {
+
+          font-size: 1rem;
+          ;
+     }
+
+     .making div {
+        
+          width: 20px;
+
+     }
+
+     .making {
+          
+          border-top: 1px solid var(--gris-transparente);
+          padding-top: 10px;
+     }
+
+
 }
 
 
@@ -1611,6 +1691,8 @@ footer {
           max-width: 105px;
 
      }
+
+
 
      .option-products img {
 
@@ -1645,44 +1727,23 @@ footer {
 
      }
 
-     .discover-enlaces {
+     .discover-enlaces,
+     .option-products-2 {
 
           width: auto;
 
      }
-          .suscripcion {
 
-               justify-content: flex-start;
-          }
-          .suscripcion h2 {
-     
-               font-size: 17px;    
-     
-          }
-     
-     
-     
-     
-          .suscribete button {
-     
-               font-size: 11px;
-               padding: 8px 16px;
-               height: 40px;
-          }
-     
-          .suscribete input {
-               
-               width: 170px;
-               padding: 8px 16px;
-               height: 40px;
-     
-          }
+     .discover-enlaces .discover-text {
 
-     .pie-footer, .suscripcion {
-
-          flex-direction: column;
-          gap: 15px;
-          width: auto;
+          min-height: 120px;
      }
+
+     .enlaces-line a {
+      
+          min-width: 160px;
+
+     }
+
 
 }
