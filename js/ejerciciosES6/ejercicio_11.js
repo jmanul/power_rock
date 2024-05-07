@@ -50,3 +50,44 @@ const users = [
 
 
 // TODO: vamos a intentar hacer destructuring pra llegar a las propiedades que necesitamos
+
+
+const sounds = []
+
+
+
+for (const user of users) {
+
+     for (const sound in user.favoritesSounds) {
+
+          sounds.push(sound);
+         
+     }
+     
+}
+
+
+
+for (let i = 0; i < sounds.length; i++) {
+     
+     let contador = 1;
+     
+     const element = sounds[i];
+
+     for (let x = 1; x < sounds.length; x++) {
+          const element2 = sounds[x];
+
+          if (element === element2) {
+              
+               contador += 1;
+               sounds.splice(x, 1);
+               x--;
+         }
+          
+     }
+
+     sounds.splice(i, 1);
+     i--;
+
+     console.log(`el sonido ${element} se repite ${contador} veces`);
+}
